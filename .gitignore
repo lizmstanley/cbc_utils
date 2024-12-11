@@ -1,0 +1,4 @@
+*.csv
+.env
+.cbc-env/
+.idea/
