@@ -6,8 +6,10 @@ This will pull the following from eBird, within the set radius:
 * Recent sightings (not notable)
 * Hotspots
 
-It uses the eBird API, documented at: https://documenter.getpostman.com/view/664302/S1ENwy59
-JSON from eBird is parsed into CSV files, which can be imported into a Google map.
+It uses the eBird API, documented at: https://documenter.getpostman.com/view/664302/S1ENwy59.
+
+JSON from eBird is parsed into CSV files, which can be imported into a Google map. That will place the
+eBird locations on a map.
 
 Add a layer in the map for each CSV, and import the csv into the map.
 Latitude and longitude are used to place the locations on the map. I usually
@@ -31,6 +33,6 @@ Within Google Maps, you can adjust the color and icons for the points.
    * You'll need to sign up for an eBird API key at ebird.org.
 2. `python app/circle_data.py`
 
-Have a look at https://www.bloomingtoncbc.org/maps to see some examples.
+Here's an example how this data can be used. Have a look at https://www.bloomingtoncbc.org/maps to see some more examples. Happy CBCing!
 
-Happy CBCing!
+![img.png](img.png)
