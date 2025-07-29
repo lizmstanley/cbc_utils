@@ -33,6 +33,6 @@ Within Google Maps, you can adjust the color and icons for the points.
    * You'll need to sign up for an eBird API key at ebird.org.
 2. `python app/circle_data.py`
 
-Here's an example how this data can be used. Have a look at https://www.bloomingtoncbc.org/maps to see some more examples. Happy CBCing!
+Here's an example of how this data can be used. Have a look at https://www.bloomingtoncbc.org/maps to see some more examples. Happy CBCing!
 
 ![img.png](img.png)
