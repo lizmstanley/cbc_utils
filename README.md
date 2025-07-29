@@ -1,5 +1,8 @@
 ## CBC Utils
 
+I'm the coordinator for the [Bloomington, MN Christmas Bird Count (CBC)](https://www.bloomingtoncbc.org/). This project is a collection of utilities to help with the CBC.
+One of the things I do leading up to the CBC is to provide a map of recent sightings found within the count circle, leveraging the eBird API.
+
 This will pull the following from eBird, within the set radius:
 
 * Recent notable sightings
