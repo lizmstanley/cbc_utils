@@ -1,7 +1,7 @@
 import csv
 import requests
 
-from app.settings import EBIRD_API_TOKEN, DISTANCE, DAYS_BACK, LONGITUDE, LATITUDE
+from src.settings import EBIRD_API_TOKEN, DISTANCE, DAYS_BACK, LONGITUDE, LATITUDE
 
 ebird_api_url = "https://api.ebird.org/v2"
 recent_obs_endpoint = f"{ebird_api_url}/data/obs/geo/recent"

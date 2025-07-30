@@ -34,7 +34,7 @@ Within Google Maps, you can adjust the color and icons for the points.
 ### Run
 1. Copy the `sample.env` to `.env` and set the values there.
    * You'll need to sign up for an eBird API key at ebird.org.
-2. `python app/circle_data.py`
+2. `python src/circle_data.py`
 
 Here's an example of how this data can be used. Have a look at https://www.bloomingtoncbc.org/maps to see some more examples. Happy CBCing!
 
