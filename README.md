@@ -8,5 +8,6 @@ I have a bunch of things scattered about at the moment, and I'm working to organ
 1. AI utilities to help extract data from submitted count sheets, created CSVs from that, and generate summaries.
 1. Google Apps Scripts to help process CBC data in Google Sheets (checking results from AI transcribed totals).
 1. Scripts to help automate data entry into the Audubon CBC website, leveraging Puppeteer to automate web browser actions.
+2. Scripts to help with participant management, and documentation/examples of my process and tools I use for that.
 
 This is still very much a work in progress. I will add more documentation and examples as I get time.
