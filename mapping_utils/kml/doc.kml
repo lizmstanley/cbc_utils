@@ -1,0 +1,3535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Bloomington CBC Ebird Recent Sightings</name>
+    <description>The Bloomington CBC consists of 24 areas. The count is held each year on the first Saturday on or after Dec 14. These are all the Ebird Hotspots within the count circle.</description>
+    <Style id="icon-1874-0288D1-labelson">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1874-7CB342-labelson">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1874-FF5252-labelson">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1874-FFEA00-labelson">
+      <IconStyle>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+    <Style id="poly-000000-4000-10-normal">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>0a000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-000000-4000-10-highlight">
+      <LineStyle>
+        <color>ff000000</color>
+        <width>6</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>0a000000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-000000-4000-10">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-000000-4000-10-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-000000-4000-10-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-006064-2000-77-normal">
+      <LineStyle>
+        <color>ff646000</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d646000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-006064-2000-77-highlight">
+      <LineStyle>
+        <color>ff646000</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d646000</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-006064-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-006064-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-006064-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-0097A7-2000-77-normal">
+      <LineStyle>
+        <color>ffa79700</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4da79700</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-0097A7-2000-77-highlight">
+      <LineStyle>
+        <color>ffa79700</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4da79700</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-0097A7-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-0097A7-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-0097A7-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-3949AB-2000-77-normal">
+      <LineStyle>
+        <color>ffab4939</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4dab4939</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-3949AB-2000-77-highlight">
+      <LineStyle>
+        <color>ffab4939</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4dab4939</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-3949AB-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-3949AB-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-3949AB-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-673AB7-2000-77-normal">
+      <LineStyle>
+        <color>ffb73a67</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4db73a67</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-673AB7-2000-77-highlight">
+      <LineStyle>
+        <color>ffb73a67</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4db73a67</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-673AB7-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-673AB7-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-673AB7-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-757575-2000-232-normal">
+      <LineStyle>
+        <color>ff757575</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>e8757575</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-757575-2000-232-highlight">
+      <LineStyle>
+        <color>ff757575</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>e8757575</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-757575-2000-232">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-757575-2000-232-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-757575-2000-232-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-817717-2000-77-normal">
+      <LineStyle>
+        <color>ff177781</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d177781</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-817717-2000-77-highlight">
+      <LineStyle>
+        <color>ff177781</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d177781</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-817717-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-817717-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-817717-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-87CEAC-2000-77-normal">
+      <LineStyle>
+        <color>ffacce87</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4dacce87</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-87CEAC-2000-77-highlight">
+      <LineStyle>
+        <color>ffacce87</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4dacce87</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-87CEAC-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-87CEAC-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-87CEAC-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-9C27B0-2000-77-normal">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4db0279c</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-9C27B0-2000-77-highlight">
+      <LineStyle>
+        <color>ffb0279c</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4db0279c</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-9C27B0-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-9C27B0-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-9C27B0-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-9FA8DA-2000-150-normal">
+      <LineStyle>
+        <color>ffdaa89f</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>96daa89f</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-9FA8DA-2000-150-highlight">
+      <LineStyle>
+        <color>ffdaa89f</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>96daa89f</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-9FA8DA-2000-150">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-9FA8DA-2000-150-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-9FA8DA-2000-150-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-9FA8DA-2000-77-normal">
+      <LineStyle>
+        <color>ffdaa89f</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4ddaa89f</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-9FA8DA-2000-77-highlight">
+      <LineStyle>
+        <color>ffdaa89f</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4ddaa89f</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-9FA8DA-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-9FA8DA-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-9FA8DA-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-A52714-1000-71-normal">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>1</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>471427a5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-A52714-1000-71-highlight">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>471427a5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-A52714-1000-71">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-A52714-1000-71-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-A52714-1000-71-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-A52714-2000-36-normal">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>241427a5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-A52714-2000-36-highlight">
+      <LineStyle>
+        <color>ff1427a5</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>241427a5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-A52714-2000-36">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-A52714-2000-36-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-A52714-2000-36-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-AFB42B-2000-77-normal">
+      <LineStyle>
+        <color>ff2bb4af</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d2bb4af</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-AFB42B-2000-77-highlight">
+      <LineStyle>
+        <color>ff2bb4af</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d2bb4af</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-AFB42B-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-AFB42B-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-AFB42B-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-C2185B-2000-77-normal">
+      <LineStyle>
+        <color>ff5b18c2</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d5b18c2</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-C2185B-2000-77-highlight">
+      <LineStyle>
+        <color>ff5b18c2</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d5b18c2</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-C2185B-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-C2185B-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-C2185B-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-E6EE9C-2000-77-normal">
+      <LineStyle>
+        <color>ff9ceee6</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d9ceee6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-E6EE9C-2000-77-highlight">
+      <LineStyle>
+        <color>ff9ceee6</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d9ceee6</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-E6EE9C-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-E6EE9C-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-E6EE9C-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F48FB1-2000-77-normal">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4db18ff4</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-F48FB1-2000-77-highlight">
+      <LineStyle>
+        <color>ffb18ff4</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4db18ff4</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-F48FB1-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F48FB1-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F48FB1-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F57C00-2000-46-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>2e007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-F57C00-2000-46-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>2e007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-2000-46">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-2000-46-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-2000-46-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F57C00-2000-77-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-F57C00-2000-77-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F57C00-2000-89-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>59007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-F57C00-2000-89-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>59007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-2000-89">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-2000-89-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-2000-89-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FADA80-2000-77-normal">
+      <LineStyle>
+        <color>ff80dafa</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d80dafa</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-FADA80-2000-77-highlight">
+      <LineStyle>
+        <color>ff80dafa</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d80dafa</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-FADA80-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FADA80-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FADA80-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FADA80-3000-133-normal">
+      <LineStyle>
+        <color>ff80dafa</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>8580dafa</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-FADA80-3000-133-highlight">
+      <LineStyle>
+        <color>ff80dafa</color>
+        <width>4.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>8580dafa</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-FADA80-3000-133">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FADA80-3000-133-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FADA80-3000-133-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FBC02D-2000-77-normal">
+      <LineStyle>
+        <color>ff2dc0fb</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d2dc0fb</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-FBC02D-2000-77-highlight">
+      <LineStyle>
+        <color>ff2dc0fb</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d2dc0fb</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-FBC02D-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FBC02D-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FBC02D-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FF5252-2000-77-normal">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d5252ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-FF5252-2000-77-highlight">
+      <LineStyle>
+        <color>ff5252ff</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>4d5252ff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-FF5252-2000-77">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FF5252-2000-77-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FF5252-2000-77-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-FFFF8D-2000-54-normal">
+      <LineStyle>
+        <color>ff8dffff</color>
+        <width>2</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>368dffff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-FFFF8D-2000-54-highlight">
+      <LineStyle>
+        <color>ff8dffff</color>
+        <width>3</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>368dffff</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-FFFF8D-2000-54">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-FFFF8D-2000-54-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-FFFF8D-2000-54-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>2024 Bloomington CBC Circle</name>
+      <Placemark>
+        <name>Full Bloomington CBC Circle</name>
+        <description>15 mile diameter circle, centered at 44.8127,-93.2199</description>
+        <styleUrl>#poly-000000-4000-10</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.2212,44.92353,0
+                -93.23186,44.92326,0
+                -93.24247,44.92247,0
+                -93.25298,44.92116,0
+                -93.26333,44.91933,0
+                -93.27348,44.91699,0
+                -93.28337,44.91415,0
+                -93.29296,44.91084,0
+                -93.3022,44.90705,0
+                -93.31104,44.90282,0
+                -93.31945,44.89816,0
+                -93.32738,44.8931,0
+                -93.33479,44.88765,0
+                -93.34165,44.88185,0
+                -93.34792,44.87573,0
+                -93.35357,44.86931,0
+                -93.35858,44.86263,0
+                -93.36292,44.85572,0
+                -93.36657,44.84861,0
+                -93.36951,44.84133,0
+                -93.37173,44.83393,0
+                -93.37321,44.82643,0
+                -93.37395,44.81888,0
+                -93.37395,44.81132,0
+                -93.37321,44.80377,0
+                -93.37173,44.79627,0
+                -93.36951,44.78887,0
+                -93.36657,44.78159,0
+                -93.36292,44.77448,0
+                -93.35858,44.76757,0
+                -93.35357,44.76089,0
+                -93.34792,44.75447,0
+                -93.34165,44.74835,0
+                -93.33479,44.74255,0
+                -93.32738,44.7371,0
+                -93.31945,44.73204,0
+                -93.31104,44.72738,0
+                -93.3022,44.72315,0
+                -93.29296,44.71936,0
+                -93.28337,44.71605,0
+                -93.27348,44.71321,0
+                -93.26333,44.71087,0
+                -93.25298,44.70904,0
+                -93.24247,44.70773,0
+                -93.23186,44.70694,0
+                -93.2212,44.70667,0
+                -93.21054,44.70694,0
+                -93.19993,44.70773,0
+                -93.18942,44.70904,0
+                -93.17907,44.71087,0
+                -93.16892,44.71321,0
+                -93.15903,44.71605,0
+                -93.14944,44.71936,0
+                -93.1402,44.72315,0
+                -93.13136,44.72738,0
+                -93.12295,44.73204,0
+                -93.11502,44.7371,0
+                -93.10761,44.74255,0
+                -93.10075,44.74835,0
+                -93.09448,44.75447,0
+                -93.08883,44.76089,0
+                -93.08382,44.76757,0
+                -93.07948,44.77448,0
+                -93.07583,44.78159,0
+                -93.07289,44.78887,0
+                -93.07067,44.79627,0
+                -93.06919,44.80377,0
+                -93.06845,44.81132,0
+                -93.06845,44.81888,0
+                -93.06919,44.82643,0
+                -93.07067,44.83393,0
+                -93.07289,44.84133,0
+                -93.07583,44.84861,0
+                -93.07948,44.85572,0
+                -93.08382,44.86263,0
+                -93.08883,44.86931,0
+                -93.09448,44.87573,0
+                -93.10075,44.88185,0
+                -93.10761,44.88765,0
+                -93.11502,44.8931,0
+                -93.12295,44.89816,0
+                -93.13136,44.90282,0
+                -93.1402,44.90705,0
+                -93.14944,44.91084,0
+                -93.15903,44.91415,0
+                -93.16892,44.91699,0
+                -93.17907,44.91933,0
+                -93.18942,44.92116,0
+                -93.19993,44.92247,0
+                -93.21054,44.92326,0
+                -93.2212,44.92353,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #1</name>
+        <description>Bloomington CBC Area #1</description>
+        <styleUrl>#poly-F57C00-2000-89</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.16703,44.80486,0
+                -93.166515,44.768005,0
+                -93.121711,44.767944,0
+                -93.117719,44.774434,0
+                -93.116775,44.776292,0
+                -93.11686,44.778394,0
+                -93.116089,44.780831,0
+                -93.115059,44.781989,0
+                -93.112742,44.784343,0
+                -93.111282,44.785827,0
+                -93.109908,44.787958,0
+                -93.108878,44.790151,0
+                -93.108214,44.792847,0
+                -93.108064,44.795664,0
+                -93.107871,44.797521,0
+                -93.107238,44.799181,0
+                -93.106004,44.801023,0
+                -93.105617,44.802454,0
+                -93.105832,44.803581,0
+                -93.106561,44.80483,0
+                -93.111711,44.804342,0
+                -93.16703,44.80486,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #21</name>
+        <description>Bloomington CBC Area #21</description>
+        <styleUrl>#poly-F57C00-2000-46</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.109867,44.788019,0
+                -93.116476,44.78019,0
+                -93.116863,44.778363,0
+                -93.11682,44.776413,0
+                -93.117292,44.775088,0
+                -93.118708,44.772544,0
+                -93.120124,44.770214,0
+                -93.121883,44.767914,0
+                -93.122741,44.764927,0
+                -93.123256,44.761758,0
+                -93.123514,44.753226,0
+                -93.127805,44.744204,0
+                -93.126174,44.740364,0
+                -93.126346,44.734512,0
+                -93.128019,44.731554,0
+                -93.131532,44.72735,0
+                -93.12557,44.730702,0
+                -93.119865,44.734053,0
+                -93.114286,44.737712,0
+                -93.109308,44.741552,0
+                -93.106154,44.743801,0
+                -93.103429,44.746232,0
+                -93.100618,44.748632,0
+                -93.097978,44.751154,0
+                -93.093815,44.755405,0
+                -93.08991,44.759718,0
+                -93.086306,44.764395,0
+                -93.084289,44.766946,0
+                -93.082872,44.769193,0
+                -93.079783,44.774205,0
+                -93.077036,44.779338,0
+                -93.075631,44.782174,0
+                -93.074569,44.785069,0
+                -93.073378,44.787935,0
+                -93.072445,44.790922,0
+                -93.071951,44.79244,0
+                -93.071542,44.793776,0
+                -93.071714,44.793958,0
+                -93.078752,44.808088,0
+                -93.086306,44.812716,0
+                -93.095404,44.80967,0
+                -93.103987,44.808696,0
+                -93.105531,44.808179,0
+                -93.106733,44.807356,0
+                -93.107033,44.806108,0
+                -93.106733,44.8048,0
+                -93.105703,44.802119,0
+                -93.107742,44.79848,0
+                -93.108719,44.791544,0
+                -93.109867,44.788019,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #2</name>
+        <description>Bloomington CBC Area #2</description>
+        <styleUrl>#poly-FADA80-3000-133</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.22133,44.804451,0
+                -93.221932,44.801126,0
+                -93.221503,44.790163,0
+                -93.21807,44.782244,0
+                -93.217641,44.746411,0
+                -93.176184,44.746629,0
+                -93.17584,44.753517,0
+                -93.171235,44.755329,0
+                -93.16657,44.761197,0
+                -93.166515,44.768005,0
+                -93.16703,44.80486,0
+                -93.22133,44.804451,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #22</name>
+        <description>Bloomington CBC Area #22</description>
+        <styleUrl>#poly-FFFF8D-2000-54</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.217756,44.706671,0
+                -93.21054,44.70694,0
+                -93.205623,44.707358,0
+                -93.19747,44.707968,0
+                -93.18942,44.70904,0
+                -93.177214,44.711384,0
+                -93.168115,44.713397,0
+                -93.158245,44.716264,0
+                -93.151808,44.718704,0
+                -93.1402,44.72315,0
+                -93.132324,44.727058,0
+                -93.129577,44.72901,0
+                -93.126174,44.734542,0
+                -93.126002,44.740394,0
+                -93.127633,44.744235,0
+                -93.123342,44.753257,0
+                -93.12314,44.762903,0
+                -93.121711,44.767944,0
+                -93.12314,44.768144,0
+                -93.166515,44.768005,0
+                -93.166429,44.761453,0
+                -93.169476,44.758604,0
+                -93.17086,44.75566,0
+                -93.174583,44.75411,0
+                -93.175792,44.753465,0
+                -93.176657,44.752455,0
+                -93.177093,44.749677,0
+                -93.177357,44.746898,0
+                -93.21782,44.746541,0
+                -93.217756,44.706671,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #3</name>
+        <description>Bloomington CBC Area #3</description>
+        <styleUrl>#poly-9FA8DA-2000-150</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.217842,44.759779,0
+                -93.217298,44.778467,0
+                -93.21807,44.782244,0
+                -93.221503,44.790163,0
+                -93.222104,44.793879,0
+                -93.221932,44.801126,0
+                -93.220988,44.80539,0
+                -93.219272,44.809652,0
+                -93.219443,44.811783,0
+                -93.221332,44.815315,0
+                -93.224679,44.813245,0
+                -93.22631,44.81154,0
+                -93.22734,44.809591,0
+                -93.227597,44.80679,0
+                -93.237897,44.796071,0
+                -93.242532,44.790407,0
+                -93.248368,44.787483,0
+                -93.254376,44.784498,0
+                -93.260127,44.783523,0
+                -93.265406,44.782305,0
+                -93.270341,44.780843,0
+                -93.275319,44.778649,0
+                -93.278752,44.7767,0
+                -93.288623,44.775116,0
+                -93.289138,44.760308,0
+                -93.288623,44.757322,0
+                -93.286031,44.752329,0
+                -93.277772,44.753574,0
+                -93.248996,44.753918,0
+                -93.245255,44.755076,0
+                -93.238093,44.755352,0
+                -93.23306,44.755666,0
+                -93.230602,44.756347,0
+                -93.224442,44.757666,0
+                -93.221372,44.759717,0
+                -93.217842,44.759779,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #23</name>
+        <description>Bloomington CBC Area #23</description>
+        <styleUrl>#poly-9FA8DA-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.217756,44.706671,0
+                -93.217641,44.759943,0
+                -93.220817,44.759668,0
+                -93.224679,44.758175,0
+                -93.23043,44.756468,0
+                -93.245622,44.755005,0
+                -93.249741,44.75403,0
+                -93.278495,44.753421,0
+                -93.286134,44.752324,0
+                -93.282958,44.745253,0
+                -93.28313,44.738668,0
+                -93.283473,44.733364,0
+                -93.282872,44.73001,0
+                -93.281499,44.721351,0
+                -93.28337,44.71605,0
+                -93.27348,44.71321,0
+                -93.26333,44.71087,0
+                -93.25298,44.70904,0
+                -93.24247,44.70773,0
+                -93.23249,44.707018,0
+                -93.2212,44.70667,0
+                -93.217756,44.706671,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #4</name>
+        <description>Bloomingon CBC Area #4</description>
+        <styleUrl>#poly-87CEAC-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.364578,44.777865,0
+                -93.359772,44.769457,0
+                -93.35357,44.76089,0
+                -93.346897,44.75349,0
+                -93.337628,44.744956,0
+                -93.32738,44.7371,0
+                -93.315655,44.729958,0
+                -93.305355,44.724835,0
+                -93.296086,44.720444,0
+                -93.28337,44.71605,0
+                -93.281499,44.721351,0
+                -93.283473,44.733364,0
+                -93.283039,44.746297,0
+                -93.289138,44.760308,0
+                -93.288623,44.775116,0
+                -93.304325,44.772626,0
+                -93.333508,44.779084,0
+                -93.352734,44.779084,0
+                -93.364578,44.777865,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #5</name>
+        <description><![CDATA[Bloomington CBC Area #5<br>MN River / 77 / 13 / 35W]]></description>
+        <styleUrl>#poly-E6EE9C-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.289918,44.799009,0
+                -93.288623,44.775116,0
+                -93.278752,44.7767,0
+                -93.275319,44.778649,0
+                -93.270341,44.780843,0
+                -93.260127,44.783523,0
+                -93.254376,44.784498,0
+                -93.242532,44.790407,0
+                -93.237897,44.796071,0
+                -93.227597,44.80679,0
+                -93.22734,44.809591,0
+                -93.22631,44.81154,0
+                -93.224896,44.812814,0
+                -93.221332,44.815315,0
+                -93.226966,44.824035,0
+                -93.230828,44.826531,0
+                -93.23439,44.824248,0
+                -93.239326,44.819347,0
+                -93.242845,44.817034,0
+                -93.248252,44.814355,0
+                -93.250055,44.811767,0
+                -93.251385,44.810854,0
+                -93.275246,44.805586,0
+                -93.284687,44.800532,0
+                -93.289918,44.799009,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #6</name>
+        <description>Bloomingon CBC Area #6</description>
+        <styleUrl>#poly-FADA80-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.369338,44.787949,0
+                -93.367106,44.782832,0
+                -93.364578,44.777865,0
+                -93.352734,44.779084,0
+                -93.333508,44.779084,0
+                -93.304325,44.772626,0
+                -93.288623,44.775116,0
+                -93.289858,44.800374,0
+                -93.29518,44.798669,0
+                -93.305651,44.79404,0
+                -93.308226,44.793918,0
+                -93.313204,44.792456,0
+                -93.319556,44.792944,0
+                -93.326251,44.792822,0
+                -93.331057,44.790507,0
+                -93.336894,44.786608,0
+                -93.341185,44.787218,0
+                -93.344275,44.789167,0
+                -93.348223,44.791725,0
+                -93.351485,44.790507,0
+                -93.35509,44.785756,0
+                -93.357836,44.785634,0
+                -93.364016,44.789289,0
+                -93.369338,44.787949,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #7</name>
+        <description>Bloomingon CBC Area #7</description>
+        <styleUrl>#poly-FBC02D-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.199767,44.897516,0
+                -93.198694,44.891862,0
+                -93.187922,44.88645,0
+                -93.193501,44.878057,0
+                -93.198222,44.870941,0
+                -93.200882,44.867899,0
+                -93.210324,44.862911,0
+                -93.189639,44.861268,0
+                -93.177537,44.861147,0
+                -93.153504,44.861268,0
+                -93.150672,44.861938,0
+                -93.146037,44.858713,0
+                -93.139685,44.856401,0
+                -93.129552,44.852327,0
+                -93.128866,44.858168,0
+                -93.130067,44.865347,0
+                -93.126634,44.873741,0
+                -93.126977,44.88104,0
+                -93.121656,44.887486,0
+                -93.118566,44.895512,0
+                -93.120802,44.896665,0
+                -93.126896,44.900374,0
+                -93.139084,44.906575,0
+                -93.146208,44.909432,0
+                -93.14947,44.907244,0
+                -93.168868,44.897881,0
+                -93.175391,44.895267,0
+                -93.178481,44.895875,0
+                -93.191184,44.899644,0
+                -93.199767,44.897516,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #8</name>
+        <description>Bloomingon CBC Area #8</description>
+        <styleUrl>#poly-F48FB1-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.126634,44.848189,0
+                -93.119767,44.840156,0
+                -93.116849,44.833704,0
+                -93.109124,44.822869,0
+                -93.10655,44.820312,0
+                -93.100713,44.814711,0
+                -93.100713,44.80923,0
+                -93.095232,44.809701,0
+                -93.086134,44.812746,0
+                -93.07858,44.808118,0
+                -93.071542,44.793989,0
+                -93.069642,44.800339,0
+                -93.06845,44.81132,0
+                -93.068441,44.819703,0
+                -93.070157,44.83127,0
+                -93.073419,44.843321,0
+                -93.079942,44.856708,0
+                -93.088182,44.868145,0
+                -93.097966,44.879458,0
+                -93.106893,44.886756,0
+                -93.118566,44.895512,0
+                -93.121656,44.887486,0
+                -93.126977,44.88104,0
+                -93.126634,44.873741,0
+                -93.130067,44.865347,0
+                -93.128866,44.858168,0
+                -93.129552,44.852327,0
+                -93.126634,44.848189,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #9</name>
+        <description>Bloomingon CBC Area #9</description>
+        <styleUrl>#poly-C2185B-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.295806,44.890764,0
+                -93.275464,44.890459,0
+                -93.258556,44.890399,0
+                -93.256153,44.891007,0
+                -93.251947,44.894412,0
+                -93.247398,44.895689,0
+                -93.235124,44.897513,0
+                -93.224224,44.89733,0
+                -93.218473,44.898121,0
+                -93.215126,44.898242,0
+                -93.204311,44.898485,0
+                -93.199767,44.897516,0
+                -93.191184,44.899644,0
+                -93.19135,44.903045,0
+                -93.193582,44.90493,0
+                -93.198131,44.906936,0
+                -93.200963,44.909428,0
+                -93.202508,44.914595,0
+                -93.202852,44.91891,0
+                -93.202766,44.922678,0
+                -93.205083,44.922861,0
+                -93.213409,44.923164,0
+                -93.221734,44.92359,0
+                -93.23315,44.923104,0
+                -93.24247,44.92247,0
+                -93.252118,44.92122,0
+                -93.260873,44.919883,0
+                -93.272632,44.917208,0
+                -93.280014,44.91502,0
+                -93.288425,44.912528,0
+                -93.288339,44.906206,0
+                -93.288425,44.900978,0
+                -93.292545,44.894047,0
+                -93.295806,44.890764,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #10</name>
+        <description><![CDATA[Bloomington CBC Area #10<br> Old Shakopee Rd / France Ave / MN River / Circle edge]]></description>
+        <styleUrl>#poly-9C27B0-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.373631,44.807986,0
+                -93.37321,44.80377,0
+                -93.371844,44.797084,0
+                -93.370814,44.793369,0
+                -93.369338,44.787949,0
+                -93.364016,44.789289,0
+                -93.357836,44.785634,0
+                -93.35509,44.785756,0
+                -93.351485,44.790507,0
+                -93.348223,44.791725,0
+                -93.341185,44.787218,0
+                -93.336894,44.786608,0
+                -93.331057,44.790507,0
+                -93.329615,44.791054,0
+                -93.329685,44.810422,0
+                -93.335366,44.809204,0
+                -93.343075,44.808108,0
+                -93.35037,44.807743,0
+                -93.373631,44.807986,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #11</name>
+        <description><![CDATA[Bloomington CBC Area #11<br>62 / Portland Ave / 494 / 35W]]></description>
+        <styleUrl>#poly-3949AB-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.295806,44.890764,0
+                -93.29604,44.888159,0
+                -93.295868,44.882321,0
+                -93.298443,44.876969,0
+                -93.29913,44.868453,0
+                -93.298958,44.862005,0
+                -93.268484,44.862588,0
+                -93.268141,44.890688,0
+                -93.295806,44.890764,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #12</name>
+        <description>Bloomingon CBC Area #12</description>
+        <styleUrl>#poly-0097A7-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.373631,44.807986,0
+                -93.35037,44.807743,0
+                -93.343075,44.808108,0
+                -93.334835,44.809265,0
+                -93.329685,44.810422,0
+                -93.328913,44.859054,0
+                -93.333462,44.858142,0
+                -93.343676,44.858324,0
+                -93.352173,44.858933,0
+                -93.360756,44.859541,0
+                -93.36292,44.85572,0
+                -93.36657,44.84861,0
+                -93.369168,44.842016,0
+                -93.37097,44.836052,0
+                -93.37173,44.83393,0
+                -93.37321,44.82643,0
+                -93.373802,44.819312,0
+                -93.373631,44.807986,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #13</name>
+        <description><![CDATA[Bloomington CBC Area #13<br>Old Shakopee Rd / 35W / MN River / France Ave]]></description>
+        <styleUrl>#poly-AFB42B-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.329685,44.810422,0
+                -93.329615,44.791054,0
+                -93.326251,44.792822,0
+                -93.319556,44.792944,0
+                -93.313204,44.792456,0
+                -93.308226,44.793918,0
+                -93.306306,44.79398,0
+                -93.29518,44.798669,0
+                -93.289858,44.800374,0
+                -93.291543,44.80677,0
+                -93.29192,44.810194,0
+                -93.29192,44.826207,0
+                -93.298271,44.826207,0
+                -93.313978,44.814639,0
+                -93.329685,44.810422,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #14</name>
+        <description>Bloomingon CBC Area #14</description>
+        <styleUrl>#poly-FBC02D-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.328913,44.859054,0
+                -93.329685,44.810422,0
+                -93.313978,44.814639,0
+                -93.308258,44.818883,0
+                -93.298271,44.826207,0
+                -93.29192,44.826207,0
+                -93.292808,44.830085,0
+                -93.295898,44.834285,0
+                -93.298302,44.83885,0
+                -93.298816,44.841041,0
+                -93.298559,44.861547,0
+                -93.301649,44.86179,0
+                -93.308086,44.861851,0
+                -93.317013,44.861303,0
+                -93.322849,44.860391,0
+                -93.328913,44.859054,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #15</name>
+        <description><![CDATA[Bloomington CBC Area #15<br>Circle egde / 35W and Lyndale / 494 / Circle edge]]></description>
+        <styleUrl>#poly-F57C00-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.360756,44.859541,0
+                -93.343676,44.858324,0
+                -93.333462,44.858142,0
+                -93.317013,44.861303,0
+                -93.308086,44.861851,0
+                -93.301649,44.86179,0
+                -93.298559,44.861547,0
+                -93.29913,44.868453,0
+                -93.298443,44.876969,0
+                -93.295868,44.882321,0
+                -93.29604,44.888159,0
+                -93.296004,44.890215,0
+                -93.295806,44.890764,0
+                -93.292545,44.894047,0
+                -93.288425,44.900978,0
+                -93.288425,44.912528,0
+                -93.296348,44.909487,0
+                -93.3022,44.90705,0
+                -93.310167,44.903226,0
+                -93.317291,44.899274,0
+                -93.32738,44.8931,0
+                -93.335744,44.886931,0
+                -93.341924,44.881458,0
+                -93.348447,44.875132,0
+                -93.35357,44.86931,0
+                -93.357974,44.863453,0
+                -93.360756,44.859541,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #16</name>
+        <description><![CDATA[Bloomington CBC Area #16<br>494 / Portland / MN River /  35W]]></description>
+        <styleUrl>#poly-FF5252-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.298958,44.862005,0
+                -93.298816,44.841041,0
+                -93.298302,44.83885,0
+                -93.295898,44.834285,0
+                -93.292808,44.830085,0
+                -93.29192,44.826207,0
+                -93.29192,44.810194,0
+                -93.291577,44.807332,0
+                -93.289918,44.799009,0
+                -93.284687,44.800532,0
+                -93.275246,44.805586,0
+                -93.268504,44.806952,0
+                -93.268402,44.86237,0
+                -93.298958,44.862005,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #17</name>
+        <description><![CDATA[Bloomington CBC Area #17<br>494 / 77 / MN River / Portland Ave]]></description>
+        <styleUrl>#poly-006064-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.268402,44.86237,0
+                -93.268504,44.806952,0
+                -93.251385,44.810854,0
+                -93.250055,44.811767,0
+                -93.248252,44.814355,0
+                -93.242845,44.817034,0
+                -93.239326,44.819347,0
+                -93.23439,44.824248,0
+                -93.230828,44.826531,0
+                -93.236161,44.830704,0
+                -93.246546,44.843486,0
+                -93.247405,44.846224,0
+                -93.247046,44.862401,0
+                -93.268402,44.86237,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #18</name>
+        <description><![CDATA[Bloomington CBC Area #20<br>494 / MN River / MN River / 77]]></description>
+        <styleUrl>#poly-817717-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.247046,44.862401,0
+                -93.247405,44.846224,0
+                -93.246546,44.843486,0
+                -93.236161,44.830704,0
+                -93.230828,44.826531,0
+                -93.22679,44.828655,0
+                -93.224129,44.829264,0
+                -93.220438,44.830542,0
+                -93.209366,44.841498,0
+                -93.206105,44.846914,0
+                -93.202929,44.855128,0
+                -93.203288,44.862227,0
+                -93.210324,44.862911,0
+                -93.215097,44.862345,0
+                -93.247046,44.862401,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #19</name>
+        <description>Bloomingon CBC Area #19</description>
+        <styleUrl>#poly-673AB7-2000-77</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.268484,44.862588,0
+                -93.215097,44.862345,0
+                -93.209776,44.863014,0
+                -93.200882,44.867899,0
+                -93.198618,44.870192,0
+                -93.187922,44.88645,0
+                -93.198694,44.891862,0
+                -93.199767,44.897516,0
+                -93.204311,44.898485,0
+                -93.218473,44.898121,0
+                -93.224224,44.89733,0
+                -93.236212,44.89762,0
+                -93.247398,44.895689,0
+                -93.251947,44.894412,0
+                -93.256153,44.891007,0
+                -93.258556,44.890399,0
+                -93.268141,44.890688,0
+                -93.268484,44.862588,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #20</name>
+        <description>Bloomington CBC Area #20</description>
+        <styleUrl>#poly-A52714-1000-71</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.203288,44.862227,0
+                -93.202929,44.855128,0
+                -93.204318,44.850971,0
+                -93.206105,44.846914,0
+                -93.207821,44.844054,0
+                -93.209366,44.841498,0
+                -93.21237,44.838333,0
+                -93.215804,44.834864,0
+                -93.220438,44.830542,0
+                -93.224129,44.829264,0
+                -93.22679,44.828655,0
+                -93.230828,44.826531,0
+                -93.226966,44.824035,0
+                -93.219443,44.811783,0
+                -93.219272,44.809652,0
+                -93.22133,44.804451,0
+                -93.190332,44.804707,0
+                -93.187242,44.808727,0
+                -93.184495,44.810919,0
+                -93.176428,44.813842,0
+                -93.173841,44.816171,0
+                -93.172982,44.818364,0
+                -93.172982,44.821773,0
+                -93.172296,44.824695,0
+                -93.170407,44.827374,0
+                -93.166459,44.830418,0
+                -93.15187,44.849436,0
+                -93.146037,44.858713,0
+                -93.150672,44.861938,0
+                -93.153504,44.861268,0
+                -93.189639,44.861268,0
+                -93.203288,44.862227,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Area #24</name>
+        <description>Bloomington CBC Area #24</description>
+        <styleUrl>#poly-A52714-2000-36</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.170501,44.827418,0
+                -93.172717,44.824211,0
+                -93.173076,44.817129,0
+                -93.174519,44.815261,0
+                -93.179326,44.81313,0
+                -93.18396,44.810938,0
+                -93.186964,44.809112,0
+                -93.189539,44.806249,0
+                -93.190259,44.804329,0
+                -93.111711,44.804342,0
+                -93.106561,44.80483,0
+                -93.106561,44.807387,0
+                -93.103815,44.808727,0
+                -93.100713,44.80923,0
+                -93.100713,44.814711,0
+                -93.109124,44.822869,0
+                -93.116849,44.833704,0
+                -93.119767,44.840156,0
+                -93.129552,44.852327,0
+                -93.146037,44.858713,0
+                -93.150157,44.852325,0
+                -93.155392,44.845083,0
+                -93.167838,44.829502,0
+                -93.170501,44.827418,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>St Paul CBC</name>
+        <description><![CDATA[This section overlaps with the the St Paul CBC, so we don't count here.]]></description>
+        <styleUrl>#poly-757575-2000-232</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -93.202766,44.922678,0
+                -93.202508,44.914595,0
+                -93.200963,44.909428,0
+                -93.198131,44.906936,0
+                -93.193582,44.90493,0
+                -93.19135,44.903045,0
+                -93.191184,44.899644,0
+                -93.180483,44.896459,0
+                -93.175391,44.895267,0
+                -93.14947,44.907244,0
+                -93.146208,44.909432,0
+                -93.154047,44.912386,0
+                -93.16366,44.915426,0
+                -93.172586,44.917978,0
+                -93.183401,44.920045,0
+                -93.195417,44.921746,0
+                -93.202766,44.922678,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recent Notables (confirmed)</name>
+      <Placemark>
+        <name>Dark-eyed Junco (Oregon)</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2024-12-10 14:08]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Headquarters</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8597018</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2141876</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 14:08</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2141876,44.8597018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White-winged Crossbill</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-09 08:04]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 08:04</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White-winged Crossbill</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-08 15:26]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 15:26</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White-winged Crossbill</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-08 10:30]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 10:30</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Red-tailed Hawk (Harlan's)]]></name>
+        <description><![CDATA[location: Colman Lake Trail<br>latitude: 44.7919402<br>longitude: -93.3369899<br>date: 2024-12-08 07:02]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Colman Lake Trail</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.7919402</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.3369899</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 07:02</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.3369899,44.7919402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Red-tailed Hawk (Harlan's)]]></name>
+        <description><![CDATA[location: Colman Lake Trail<br>latitude: 44.7919402<br>longitude: -93.3369899<br>date: 2024-12-06 15:05]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Colman Lake Trail</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.7919402</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.3369899</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-06 15:05</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.3369899,44.7919402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Red-tailed Hawk (Harlan's)]]></name>
+        <description><![CDATA[location: Colman Lake Trail<br>latitude: 44.7919402<br>longitude: -93.3369899<br>date: 2024-12-05 15:20]]></description>
+        <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Colman Lake Trail</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.7919402</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.3369899</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-05 15:20</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.3369899,44.7919402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recent Notables (provisional)</name>
+      <Placemark>
+        <name>Winter Wren</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-FFEA00-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recent (confirmed)</name>
+      <Placemark>
+        <name>Mourning Dove</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Downy Woodpecker</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northern Flicker</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>House Sparrow</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>House Finch</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Goldfinch</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northern Cardinal</name>
+        <description><![CDATA[location: Home<br>latitude: 44.80383<br>longitude: -93.341242<br>date: 2024-12-10 16:34]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.80383</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.341242</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:34</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.341242,44.80383,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mallard</name>
+        <description><![CDATA[location: Lake Nokomis<br>latitude: 44.9082924<br>longitude: -93.2437134<br>date: 2024-12-10 16:25]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Lake Nokomis</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9082924</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2437134</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:25</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2437134,44.9082924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ring-necked Pheasant</name>
+        <description><![CDATA[location: Lake Nokomis<br>latitude: 44.9082924<br>longitude: -93.2437134<br>date: 2024-12-10 16:25]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Lake Nokomis</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9082924</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2437134</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 16:25</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2437134,44.9082924,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Canada Goose</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Red-tailed Hawk</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Red-bellied Woodpecker</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hairy Woodpecker</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Merlin</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Crow</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Black-capped Chickadee</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White-breasted Nuthatch</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Robin</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Dark-eyed Junco</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 15:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 15:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northern Shrike</name>
+        <description><![CDATA[location: Minnesota Valley National Wildlife Refuge, Eagan US-MN (44.8203,-93.2251)<br>latitude: 44.820252<br>longitude: -93.225057<br>date: 2024-12-10 14:42]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley National Wildlife Refuge, Eagan US-MN (44.8203,-93.2251)</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.820252</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.225057</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 14:42</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.225057,44.820252,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blue Jay</name>
+        <description><![CDATA[location: 6744 Wentworth Ave S, Richfield US-MN 44.87993, -93.28073<br>latitude: 44.879926<br>longitude: -93.280734<br>date: 2024-12-10 14:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>6744 Wentworth Ave S, Richfield US-MN 44.87993, -93.28073</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.879926</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.280734</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 14:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.280734,44.879926,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White-winged Crossbill</name>
+        <description><![CDATA[location: 6744 Wentworth Ave S, Richfield US-MN 44.87993, -93.28073<br>latitude: 44.879926<br>longitude: -93.280734<br>date: 2024-12-10 14:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>6744 Wentworth Ave S, Richfield US-MN 44.87993, -93.28073</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.879926</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.280734</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 14:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.280734,44.879926,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Wild Turkey</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2024-12-10 14:08]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Headquarters</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8597018</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2141876</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 14:08</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2141876,44.8597018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rock Pigeon</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2024-12-10 14:08]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Headquarters</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8597018</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2141876</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 14:08</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2141876,44.8597018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Cooper's Hawk]]></name>
+        <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2024-12-10 13:25]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Headquarters</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8597018</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2141876</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:25</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2141876,44.8597018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Red-headed Woodpecker</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2024-12-10 13:25]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Headquarters</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8597018</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2141876</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:25</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2141876,44.8597018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Common Merganser</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Ring-billed Gull</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brown Creeper</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cedar Waxwing</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Tree Sparrow</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>White-throated Sparrow</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Swamp Sparrow</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Red-winged Blackbird</name>
+        <description><![CDATA[location: Wood Lake Nature Center<br>latitude: 44.8773731<br>longitude: -93.2931089<br>date: 2024-12-10 13:00]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Wood Lake Nature Center</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8773731</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2931089</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:00</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2931089,44.8773731,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bald Eagle</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 12:58]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 12:58</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Red-breasted Nuthatch</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 12:58]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 12:58</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hooded Merganser</name>
+        <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2024-12-10 11:56]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Old Cedar Ave. Bridge</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8306236</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2436534</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 11:56</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2436534,44.8306236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Eastern Bluebird</name>
+        <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2024-12-10 11:56]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Old Cedar Ave. Bridge</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8306236</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2436534</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 11:56</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2436534,44.8306236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Sharp-shinned Hawk</name>
+        <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398<br>date: 2024-12-10 09:25]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Acacia Park Cemetery</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8781526</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1698398</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 09:25</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1698398,44.8781526,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Horned Owl</name>
+        <description><![CDATA[location: Grass Lake<br>latitude: 44.8937621<br>longitude: -93.2971966<br>date: 2024-12-09 18:14]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Grass Lake</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8937621</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2971966</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 18:14</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2971966,44.8937621,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Trumpeter Swan</name>
+        <description><![CDATA[location: Hyland Lake Park Reserve-Hyland Lake<br>latitude: 44.8215264<br>longitude: -93.3659363<br>date: 2024-12-09 11:16]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Hyland Lake Park Reserve-Hyland Lake</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8215264</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.3659363</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 11:16</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.3659363,44.8215264,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Kestrel</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2024-12-09 10:31]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Headquarters</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8597018</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2141876</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 10:31</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2141876,44.8597018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>European Starling</name>
+        <description><![CDATA[location: Colman Lake Trail<br>latitude: 44.7919402<br>longitude: -93.3369899<br>date: 2024-12-09 09:10]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Colman Lake Trail</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.7919402</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.3369899</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 09:10</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.3369899,44.7919402,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Golden-crowned Kinglet</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Bass Ponds<br>latitude: 44.84479<br>longitude: -93.23007<br>date: 2024-12-09 08:55]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Bass Ponds</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.84479</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.23007</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 08:55</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.23007,44.84479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Song Sparrow</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Bass Ponds<br>latitude: 44.84479<br>longitude: -93.23007<br>date: 2024-12-09 08:45]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Bass Ponds</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.84479</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.23007</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 08:45</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.23007,44.84479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Gadwall</name>
+        <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2024-12-09 08:17]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Old Cedar Ave. Bridge</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8306236</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2436534</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 08:17</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2436534,44.8306236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Wigeon</name>
+        <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2024-12-09 08:17]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Old Cedar Ave. Bridge</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8306236</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2436534</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 08:17</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2436534,44.8306236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Belted Kingfisher</name>
+        <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2024-12-09 08:17]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Old Cedar Ave. Bridge</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8306236</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2436534</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 08:17</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2436534,44.8306236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Barred Owl</name>
+        <description><![CDATA[location: Fort Snelling SP--Snelling Lake<br>latitude: 44.8805053<br>longitude: -93.1835461<br>date: 2024-12-09 07:53]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Fort Snelling SP--Snelling Lake</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8805053</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1835461</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-09 07:53</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1835461,44.8805053,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Greater Scaup</name>
+        <description><![CDATA[location: Black Dog Lake outlet<br>latitude: 44.8249594<br>longitude: -93.2334781<br>date: 2024-12-08 15:19]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Black Dog Lake outlet</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8249594</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2334781</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 15:19</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2334781,44.8249594,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lesser Scaup</name>
+        <description><![CDATA[location: Black Dog Lake outlet<br>latitude: 44.8249594<br>longitude: -93.2334781<br>date: 2024-12-08 15:19]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Black Dog Lake outlet</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8249594</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2334781</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 15:19</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2334781,44.8249594,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Pileated Woodpecker</name>
+        <description><![CDATA[location: Home<br>latitude: 44.896748<br>longitude: -93.272014<br>date: 2024-12-08 11:45]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Home</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.896748</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.272014</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 11:45</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.272014,44.896748,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Herring Gull</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Sorenson Landing<br>latitude: 44.8012609<br>longitude: -93.2891972<br>date: 2024-12-08 09:51]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Sorenson Landing</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8012609</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2891972</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-08 09:51</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2891972,44.8012609,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Snowy Owl</name>
+        <description><![CDATA[location: Center Sidewalk CF-WF<br>latitude: 44.801725<br>longitude: -93.139155<br>date: 2024-12-07 14:38]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Center Sidewalk CF-WF</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.801725</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.139155</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-07 14:38</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.139155,44.801725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Redpoll</name>
+        <description><![CDATA[location: Mound Springs Park<br>latitude: 44.8210251<br>longitude: -93.2568026<br>date: 2024-12-07 09:27]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Mound Springs Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8210251</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2568026</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-07 09:27</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2568026,44.8210251,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Peregrine Falcon</name>
+        <description><![CDATA[location: 3601 Minnesota Dr, Bloomington US-MN 44.86112, -93.32716<br>latitude: 44.861124<br>longitude: -93.327163<br>date: 2024-12-06 15:13]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>3601 Minnesota Dr, Bloomington US-MN 44.86112, -93.32716</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.861124</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.327163</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-06 15:13</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.327163,44.861124,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Great Blue Heron</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Bass Ponds<br>latitude: 44.84479<br>longitude: -93.23007<br>date: 2024-12-06 08:50]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Bass Ponds</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.84479</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.23007</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-06 08:50</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.23007,44.84479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Northern Harrier</name>
+        <description><![CDATA[location: Minnesota Valley NWR--Bass Ponds<br>latitude: 44.84479<br>longitude: -93.23007<br>date: 2024-12-06 08:50]]></description>
+        <styleUrl>#icon-1874-0288D1-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Minnesota Valley NWR--Bass Ponds</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.84479</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.23007</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-06 08:50</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.23007,44.84479,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>Recent (provisional)</name>
+      <Placemark>
+        <name>Winter Wren</name>
+        <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191<br>date: 2024-12-10 13:09]]></description>
+        <styleUrl>#icon-1874-7CB342-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Crosby Farm Regional Park</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.9011069</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.1539191</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-10 13:09</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.1539191,44.9011069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Hermit Thrush</name>
+        <description><![CDATA[location: Center Sidewalk CF-WF<br>latitude: 44.801725<br>longitude: -93.139155<br>date: 2024-12-07 14:38]]></description>
+        <styleUrl>#icon-1874-7CB342-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Center Sidewalk CF-WF</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.801725</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.139155</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-07 14:38</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.139155,44.801725,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>American Black Duck</name>
+        <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2024-12-07 14:08]]></description>
+        <styleUrl>#icon-1874-7CB342-labelson</styleUrl>
+        <ExtendedData>
+          <Data name="location">
+            <value>Old Cedar Ave. Bridge</value>
+          </Data>
+          <Data name="latitude">
+            <value>44.8306236</value>
+          </Data>
+          <Data name="longitude">
+            <value>-93.2436534</value>
+          </Data>
+          <Data name="date">
+            <value>2024-12-07 14:08</value>
+          </Data>
+        </ExtendedData>
+        <Point>
+          <coordinates>
+            -93.2436534,44.8306236,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>

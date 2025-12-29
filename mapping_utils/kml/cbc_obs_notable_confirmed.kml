@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Recent Notables (confirmed)</name>
+    
+        <Style id="notable_confirmed_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/notable_confirmed.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Placemark>
+            <name>Hermit Thrush</name>
+            <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534<br>date: 2025-12-17 10:37]]></description>
+            <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Old Cedar Ave. Bridge</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8306236</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2436534</value>
+                </Data>  
+                <Data name="date">
+                    <value>2025-12-17 10:37</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2436534,44.8306236,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+        <Placemark>
+            <name>Dark-eyed Junco (Oregon)</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2025-12-15 15:00]]></description>
+            <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Headquarters</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8597018</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2141876</value>
+                </Data>  
+                <Data name="date">
+                    <value>2025-12-15 15:00</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2141876,44.8597018,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+        <Placemark>
+            <name>Dark-eyed Junco (Oregon)</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2025-12-14 10:58]]></description>
+            <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Headquarters</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8597018</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2141876</value>
+                </Data>  
+                <Data name="date">
+                    <value>2025-12-14 10:58</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2141876,44.8597018,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+        <Placemark>
+            <name>White-crowned Sparrow</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2025-12-14 10:58]]></description>
+            <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Headquarters</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8597018</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2141876</value>
+                </Data>  
+                <Data name="date">
+                    <value>2025-12-14 10:58</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2141876,44.8597018,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+        <Placemark>
+            <name>White-crowned Sparrow</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2025-12-13 14:36]]></description>
+            <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Headquarters</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8597018</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2141876</value>
+                </Data>  
+                <Data name="date">
+                    <value>2025-12-13 14:36</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2141876,44.8597018,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+        <Placemark>
+            <name>White-crowned Sparrow</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876<br>date: 2025-12-13 11:18]]></description>
+            <styleUrl>#icon-1874-FF5252-labelson</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Headquarters</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8597018</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2141876</value>
+                </Data>  
+                <Data name="date">
+                    <value>2025-12-13 11:18</value>
+                </Data>
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2141876,44.8597018,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+    </Document>
+</kml>

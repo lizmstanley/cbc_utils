@@ -1,0 +1,3297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>eBird Hotspots</name>
+    
+        <Style id="h_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/h.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="o_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/o.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="t_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/t.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="s_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/s.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="p_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/p.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="o_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/o.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="t_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/t.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>        
+        <Placemark>
+            <name>Acacia Park Cemetery</name>
+            <description><![CDATA[location: Acacia Park Cemetery<br>latitude: 44.8781526<br>longitude: -93.1698398]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Acacia Park Cemetery</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8781526</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1698398</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1698398,44.8781526,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Alimagnet Lake Park</name>
+            <description><![CDATA[location: Alimagnet Lake Park<br>latitude: 44.7428927<br>longitude: -93.2511377]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Alimagnet Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7428927</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2511377</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2511377,44.7428927,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Ames Crossing Rd</name>
+            <description><![CDATA[location: Ames Crossing Rd<br>latitude: 44.8533007<br>longitude: -93.1109717]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Ames Crossing Rd</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8533007</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1109717</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1109717,44.8533007,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Auto Club Park (Formerly Isaak Walton Club Park)</name>
+            <description><![CDATA[location: Auto Club Park (Formerly Isaak Walton Club Park)<br>latitude: 44.7924041<br>longitude: -93.3689833]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Auto Club Park (Formerly Isaak Walton Club Park)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7924041</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3689833</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3689833,44.7924041,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Barbara Savanick Park</name>
+            <description><![CDATA[location: Barbara Savanick Park<br>latitude: 44.7460379<br>longitude: -93.1635507]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Barbara Savanick Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7460379</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1635507</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1635507,44.7460379,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Belmont Park</name>
+            <description><![CDATA[location: Belmont Park<br>latitude: 44.763393<br>longitude: -93.234613]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Belmont Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.763393</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.234613</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.234613,44.763393,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Big Rivers Overlook</name>
+            <description><![CDATA[location: Big Rivers Overlook<br>latitude: 44.867073<br>longitude: -93.1730318]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Big Rivers Overlook</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.867073</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1730318</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1730318,44.867073,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Black Dog Lake</name>
+            <description><![CDATA[location: Black Dog Lake<br>latitude: 44.801193<br>longitude: -93.2692]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Black Dog Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.801193</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2692</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2692,44.801193,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Black Dog Lake outlet</name>
+            <description><![CDATA[location: Black Dog Lake outlet<br>latitude: 44.8249594<br>longitude: -93.2334781]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Black Dog Lake outlet</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8249594</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2334781</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2334781,44.8249594,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Black Dog Lake--West Outflow</name>
+            <description><![CDATA[location: Black Dog Lake--West Outflow<br>latitude: 44.8012294<br>longitude: -93.2852953]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Black Dog Lake--West Outflow</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8012294</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2852953</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2852953,44.8012294,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Black Dog Park</name>
+            <description><![CDATA[location: Black Dog Park<br>latitude: 44.8037781<br>longitude: -93.2483482]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Black Dog Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8037781</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2483482</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2483482,44.8037781,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Black Dog Power Plant</name>
+            <description><![CDATA[location: Black Dog Power Plant<br>latitude: 44.808113<br>longitude: -93.24928]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Black Dog Power Plant</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.808113</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.24928</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.24928,44.808113,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Blackhawk Park</name>
+            <description><![CDATA[location: Blackhawk Park<br>latitude: 44.8174103<br>longitude: -93.1841207]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Blackhawk Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8174103</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1841207</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1841207,44.8174103,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Bloomington Off-leash Dog Park</name>
+            <description><![CDATA[location: Bloomington Off-leash Dog Park<br>latitude: 44.8092782<br>longitude: -93.3728359]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Bloomington Off-leash Dog Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8092782</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3728359</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3728359,44.8092782,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Bonaparte’s Pond</name>
+            <description><![CDATA[location: Bonaparte’s Pond<br>latitude: 44.728158<br>longitude: -93.1450872]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Bonaparte’s Pond</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.728158</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1450872</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1450872,44.728158,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Buck Hill</name>
+            <description><![CDATA[location: Buck Hill<br>latitude: 44.7244005<br>longitude: -93.2840357]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Buck Hill</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7244005</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2840357</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2840357,44.7244005,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Burnsville landfill</name>
+            <description><![CDATA[location: Burnsville landfill<br>latitude: 44.7806623<br>longitude: -93.3179569]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Burnsville landfill</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7806623</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3179569</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3179569,44.7806623,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Carroll's Woods Natural Area</name>
+            <description><![CDATA[location: Carroll's Woods Natural Area<br>latitude: 44.7449128<br>longitude: -93.1378678]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Carroll's Woods Natural Area</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7449128</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1378678</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1378678,44.7449128,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Centennial Lakes Park</name>
+            <description><![CDATA[location: Centennial Lakes Park<br>latitude: 44.8671492<br>longitude: -93.3259606]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Centennial Lakes Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8671492</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3259606</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3259606,44.8671492,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Central Park (Bloomington)</name>
+            <description><![CDATA[location: Central Park (Bloomington)<br>latitude: 44.8127407<br>longitude: -93.3023229]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Central Park (Bloomington)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8127407</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3023229</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3023229,44.8127407,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Chaparral Park</name>
+            <description><![CDATA[location: Chaparral Park<br>latitude: 44.768222<br>longitude: -93.230966]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Chaparral Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.768222</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.230966</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.230966,44.768222,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Claret Park</name>
+            <description><![CDATA[location: Claret Park<br>latitude: 44.7287463<br>longitude: -93.1412523]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Claret Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7287463</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1412523</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1412523,44.7287463,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Cobblestone lake Park</name>
+            <description><![CDATA[location: Cobblestone lake Park<br>latitude: 44.7212898<br>longitude: -93.1664046]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Cobblestone lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7212898</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1664046</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1664046,44.7212898,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Coldwater Spring</name>
+            <description><![CDATA[location: Coldwater Spring<br>latitude: 44.9000274<br>longitude: -93.1963938]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Coldwater Spring</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9000274</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1963938</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1963938,44.9000274,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Colman Lake Trail</name>
+            <description><![CDATA[location: Colman Lake Trail<br>latitude: 44.7919402<br>longitude: -93.3369899]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Colman Lake Trail</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7919402</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3369899</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3369899,44.7919402,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Copperfield Ponds/Friendly Hills Parks</name>
+            <description><![CDATA[location: Copperfield Ponds/Friendly Hills Parks<br>latitude: 44.8720966<br>longitude: -93.1162977]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Copperfield Ponds/Friendly Hills Parks</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8720966</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1162977</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1162977,44.8720966,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Crosby Farm Regional Park</name>
+            <description><![CDATA[location: Crosby Farm Regional Park<br>latitude: 44.9011069<br>longitude: -93.1539191]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Crosby Farm Regional Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9011069</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1539191</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1539191,44.9011069,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Crosstown West Park</name>
+            <description><![CDATA[location: Crosstown West Park<br>latitude: 44.7755375<br>longitude: -93.2717894]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Crosstown West Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7755375</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2717894</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2717894,44.7755375,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Crystal Lake</name>
+            <description><![CDATA[location: Crystal Lake<br>latitude: 44.723047<br>longitude: -93.2683304]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Crystal Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.723047</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2683304</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2683304,44.723047,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Delaney Park</name>
+            <description><![CDATA[location: Delaney Park<br>latitude: 44.7378053<br>longitude: -93.1658371]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Delaney Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7378053</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1658371</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1658371,44.7378053,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Diamond Lake (Minneapolis)</name>
+            <description><![CDATA[location: Diamond Lake (Minneapolis)<br>latitude: 44.9014837<br>longitude: -93.2690334]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Diamond Lake (Minneapolis)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9014837</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2690334</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2690334,44.9014837,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Diamond Path Park</name>
+            <description><![CDATA[location: Diamond Path Park<br>latitude: 44.7331694<br>longitude: -93.1597743]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Diamond Path Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7331694</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1597743</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1597743,44.7331694,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Dodge Nature Center Lilly Preserve</name>
+            <description><![CDATA[location: Dodge Nature Center Lilly Preserve<br>latitude: 44.8808677<br>longitude: -93.1137222]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Dodge Nature Center Lilly Preserve</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8808677</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1137222</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1137222,44.8808677,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Eagan Community Center</name>
+            <description><![CDATA[location: Eagan Community Center<br>latitude: 44.839115<br>longitude: -93.172098]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Eagan Community Center</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.839115</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.172098</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.172098,44.839115,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Earley Lake</name>
+            <description><![CDATA[location: Earley Lake<br>latitude: 44.7396006<br>longitude: -93.294611]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Earley Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7396006</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.294611</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.294611,44.7396006,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>East Lake Cemetery</name>
+            <description><![CDATA[location: East Lake Cemetery<br>latitude: 44.713557<br>longitude: -93.17606]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>East Lake Cemetery</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.713557</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.17606</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.17606,44.713557,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Farquahar Park</name>
+            <description><![CDATA[location: Farquahar Park<br>latitude: 44.7562345<br>longitude: -93.169325]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Farquahar Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7562345</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.169325</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.169325,44.7562345,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fieldstone Park and Ponds</name>
+            <description><![CDATA[location: Fieldstone Park and Ponds<br>latitude: 44.7096582<br>longitude: -93.1861317]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fieldstone Park and Ponds</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7096582</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1861317</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1861317,44.7096582,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fish Lake Park</name>
+            <description><![CDATA[location: Fish Lake Park<br>latitude: 44.822376<br>longitude: -93.163442]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fish Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.822376</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.163442</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.163442,44.822376,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling National Cemetery</name>
+            <description><![CDATA[location: Fort Snelling National Cemetery<br>latitude: 44.8684013<br>longitude: -93.2157326]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling National Cemetery</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8684013</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2157326</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2157326,44.8684013,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP</name>
+            <description><![CDATA[location: Fort Snelling SP<br>latitude: 44.874446<br>longitude: -93.1911072]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.874446</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1911072</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1911072,44.874446,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP--Casperson Landing & trails</name>
+            <description><![CDATA[location: Fort Snelling SP--Casperson Landing & trails<br>latitude: 44.8273564<br>longitude: -93.2281351]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP--Casperson Landing &amp; trails</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8273564</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2281351</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2281351,44.8273564,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP--Gun Club Lake</name>
+            <description><![CDATA[location: Fort Snelling SP--Gun Club Lake<br>latitude: 44.8680211<br>longitude: -93.1823981]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP--Gun Club Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8680211</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1823981</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1823981,44.8680211,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP--Picnic Island</name>
+            <description><![CDATA[location: Fort Snelling SP--Picnic Island<br>latitude: 44.8856898<br>longitude: -93.1788039]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP--Picnic Island</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8856898</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1788039</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1788039,44.8856898,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP--Pike Island</name>
+            <description><![CDATA[location: Fort Snelling SP--Pike Island<br>latitude: 44.8902<br>longitude: -93.1716]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP--Pike Island</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8902</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1716</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1716,44.8902,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP--Snelling Lake</name>
+            <description><![CDATA[location: Fort Snelling SP--Snelling Lake<br>latitude: 44.8805053<br>longitude: -93.1835461]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP--Snelling Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8805053</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1835461</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1835461,44.8805053,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fort Snelling SP--Visitor Center</name>
+            <description><![CDATA[location: Fort Snelling SP--Visitor Center<br>latitude: 44.8904804<br>longitude: -93.1821084]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fort Snelling SP--Visitor Center</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8904804</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1821084</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1821084,44.8904804,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Fred Richards Park</name>
+            <description><![CDATA[location: Fred Richards Park<br>latitude: 44.865735<br>longitude: -93.340989]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Fred Richards Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.865735</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.340989</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.340989,44.865735,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Grass Lake</name>
+            <description><![CDATA[location: Grass Lake<br>latitude: 44.8937621<br>longitude: -93.2971966]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Grass Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8937621</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2971966</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2971966,44.8937621,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Haeg Park</name>
+            <description><![CDATA[location: Haeg Park<br>latitude: 44.850992<br>longitude: -93.3067818]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Haeg Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.850992</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3067818</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3067818,44.850992,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Harrison Picnic Ground</name>
+            <description><![CDATA[location: Harrison Picnic Ground<br>latitude: 44.8216821<br>longitude: -93.3021823]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Harrison Picnic Ground</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8216821</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3021823</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3021823,44.8216821,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Heritage Hills Park</name>
+            <description><![CDATA[location: Heritage Hills Park<br>latitude: 44.8177831<br>longitude: -93.3408308]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Heritage Hills Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8177831</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3408308</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3408308,44.8177831,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Hidden Falls Regional Park</name>
+            <description><![CDATA[location: Hidden Falls Regional Park<br>latitude: 44.9060432<br>longitude: -93.192215]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Hidden Falls Regional Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9060432</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.192215</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.192215,44.9060432,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Hidden Valley Park</name>
+            <description><![CDATA[location: Hidden Valley Park<br>latitude: 44.7627252<br>longitude: -93.3426386]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Hidden Valley Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7627252</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3426386</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3426386,44.7627252,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Historic Fort Snelling</name>
+            <description><![CDATA[location: Historic Fort Snelling<br>latitude: 44.8927674<br>longitude: -93.1806627]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Historic Fort Snelling</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8927674</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1806627</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1806627,44.8927674,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Hollows Park</name>
+            <description><![CDATA[location: Hollows Park<br>latitude: 44.7407937<br>longitude: -93.3180465]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Hollows Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7407937</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3180465</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3180465,44.7407937,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Huntington Park</name>
+            <description><![CDATA[location: Huntington Park<br>latitude: 44.7624503<br>longitude: -93.1641494]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Huntington Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7624503</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1641494</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1641494,44.7624503,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Hyland Lake Park Reserve--Hyland Lake picnic area</name>
+            <description><![CDATA[location: Hyland Lake Park Reserve--Hyland Lake picnic area<br>latitude: 44.8225276<br>longitude: -93.3721898]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Hyland Lake Park Reserve--Hyland Lake picnic area</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8225276</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3721898</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3721898,44.8225276,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Hyland Lake Park Reserve-Hyland Lake</name>
+            <description><![CDATA[location: Hyland Lake Park Reserve-Hyland Lake<br>latitude: 44.8215264<br>longitude: -93.3659363]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Hyland Lake Park Reserve-Hyland Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8215264</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3659363</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3659363,44.8215264,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Hyland-Bush Lakes Park--Visitor Center</name>
+            <description><![CDATA[location: Hyland-Bush Lakes Park--Visitor Center<br>latitude: 44.8258954<br>longitude: -93.3714294]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Hyland-Bush Lakes Park--Visitor Center</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8258954</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3714294</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3714294,44.8258954,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Innisfree Park</name>
+            <description><![CDATA[location: Innisfree Park<br>latitude: 44.7561288<br>longitude: -93.1558077]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Innisfree Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7561288</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1558077</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1558077,44.7561288,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Jaycee Park</name>
+            <description><![CDATA[location: Jaycee Park<br>latitude: 44.7245775<br>longitude: -93.1483867]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Jaycee Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7245775</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1483867</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1483867,44.7245775,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Kelleher Park (formerly Cam Ram Park)</name>
+            <description><![CDATA[location: Kelleher Park (formerly Cam Ram Park)<br>latitude: 44.7345401<br>longitude: -93.3221412]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Kelleher Park (formerly Cam Ram Park)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7345401</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3221412</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3221412,44.7345401,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Keller Lake</name>
+            <description><![CDATA[location: Keller Lake<br>latitude: 44.7264762<br>longitude: -93.2517357]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Keller Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7264762</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2517357</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2517357,44.7264762,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Kettle Park</name>
+            <description><![CDATA[location: Kettle Park<br>latitude: 44.786291<br>longitude: -93.207869]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Kettle Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.786291</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.207869</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.207869,44.786291,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Koch Minnesota Trail</name>
+            <description><![CDATA[location: Koch Minnesota Trail<br>latitude: 44.7421659<br>longitude: -93.1249663]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Koch Minnesota Trail</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7421659</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1249663</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1249663,44.7421659,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lac Lavon Park</name>
+            <description><![CDATA[location: Lac Lavon Park<br>latitude: 44.7204691<br>longitude: -93.2520604]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lac Lavon Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7204691</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2520604</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2520604,44.7204691,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lake Cornelia</name>
+            <description><![CDATA[location: Lake Cornelia<br>latitude: 44.8842455<br>longitude: -93.3390284]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lake Cornelia</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8842455</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3390284</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3390284,44.8842455,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lake Girard Park</name>
+            <description><![CDATA[location: Lake Girard Park<br>latitude: 44.8488105<br>longitude: -93.3267117]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lake Girard Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8488105</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3267117</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3267117,44.8488105,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lake Hiawatha Park</name>
+            <description><![CDATA[location: Lake Hiawatha Park<br>latitude: 44.920967<br>longitude: -93.2347699]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lake Hiawatha Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.920967</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2347699</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2347699,44.920967,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lake Nokomis</name>
+            <description><![CDATA[location: Lake Nokomis<br>latitude: 44.9082924<br>longitude: -93.2437134]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lake Nokomis</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9082924</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2437134</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2437134,44.9082924,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lake Nokomis--Amelia Pond</name>
+            <description><![CDATA[location: Lake Nokomis--Amelia Pond<br>latitude: 44.9034139<br>longitude: -93.2503223]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lake Nokomis--Amelia Pond</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9034139</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2503223</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2503223,44.9034139,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lake Nokomis--Gateway Pond</name>
+            <description><![CDATA[location: Lake Nokomis--Gateway Pond<br>latitude: 44.902046<br>longitude: -93.2465243]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lake Nokomis--Gateway Pond</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.902046</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2465243</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2465243,44.902046,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park<br>latitude: 44.7828707<br>longitude: -93.1423473]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7828707</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1423473</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1423473,44.7828707,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park - - Camp Sacajawea</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park - - Camp Sacajawea<br>latitude: 44.7682849<br>longitude: -93.1694945]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park - - Camp Sacajawea</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7682849</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1694945</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1694945,44.7682849,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park -- Red Pine Ln Pinestand Trailhead</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park -- Red Pine Ln Pinestand Trailhead<br>latitude: 44.776911<br>longitude: -93.120935]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park -- Red Pine Ln Pinestand Trailhead</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.776911</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.120935</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.120935,44.776911,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park — Marsh Lake Area</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park — Marsh Lake Area<br>latitude: 44.783284<br>longitude: -93.12404]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park — Marsh Lake Area</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.783284</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.12404</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.12404,44.783284,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Campground</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Campground<br>latitude: 44.7738946<br>longitude: -93.1849033]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Campground</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7738946</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1849033</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1849033,44.7738946,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Holland Lake</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Holland Lake<br>latitude: 44.7890995<br>longitude: -93.1446218]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Holland Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7890995</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1446218</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1446218,44.7890995,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Jensen Lake Loop</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Jensen Lake Loop<br>latitude: 44.7784462<br>longitude: -93.16432]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Jensen Lake Loop</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7784462</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.16432</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.16432,44.7784462,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Marsh off 120th street</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Marsh off 120th street<br>latitude: 44.775738<br>longitude: -93.128502]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Marsh off 120th street</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.775738</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.128502</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.128502,44.775738,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--McDonough Lake area</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--McDonough Lake area<br>latitude: 44.7884135<br>longitude: -93.1307327]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--McDonough Lake area</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7884135</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1307327</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1307327,44.7884135,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Pilot Knob Rd</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Pilot Knob Rd<br>latitude: 44.7722085<br>longitude: -93.1666374]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Pilot Knob Rd</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7722085</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1666374</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1666374,44.7722085,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Schulze Lake area</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Schulze Lake area<br>latitude: 44.7856878<br>longitude: -93.1298445]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Schulze Lake area</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7856878</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1298445</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1298445,44.7856878,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--Visitor Center</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--Visitor Center<br>latitude: 44.7861266<br>longitude: -93.1287251]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--Visitor Center</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7861266</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1287251</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1287251,44.7861266,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Lebanon Hills Regional Park--West Trailhead</name>
+            <description><![CDATA[location: Lebanon Hills Regional Park--West Trailhead<br>latitude: 44.7820483<br>longitude: -93.1881326]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Lebanon Hills Regional Park--West Trailhead</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7820483</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1881326</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1881326,44.7820483,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Long Lake Park</name>
+            <description><![CDATA[location: Long Lake Park<br>latitude: 44.757589<br>longitude: -93.180386]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Long Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.757589</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.180386</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.180386,44.757589,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Longfellow Gardens</name>
+            <description><![CDATA[location: Longfellow Gardens<br>latitude: 44.9158525<br>longitude: -93.2147402]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Longfellow Gardens</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9158525</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2147402</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2147402,44.9158525,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>MSP Aircraft Viewing Area, Cargo Rd</name>
+            <description><![CDATA[location: MSP Aircraft Viewing Area, Cargo Rd<br>latitude: 44.8819954<br>longitude: -93.2287359]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>MSP Aircraft Viewing Area, Cargo Rd</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8819954</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2287359</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2287359,44.8819954,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>MSP International Airport</name>
+            <description><![CDATA[location: MSP International Airport<br>latitude: 44.885369<br>longitude: -93.2217797]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>MSP International Airport</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.885369</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2217797</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2217797,44.885369,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>MSP International Airport--Cargo Rd.</name>
+            <description><![CDATA[location: MSP International Airport--Cargo Rd.<br>latitude: 44.8778597<br>longitude: -93.2354307]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>MSP International Airport--Cargo Rd.</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8778597</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2354307</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2354307,44.8778597,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Marianna Ranch Park</name>
+            <description><![CDATA[location: Marianna Ranch Park<br>latitude: 44.8199868<br>longitude: -93.0929296]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Marianna Ranch Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8199868</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.0929296</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.0929296,44.8199868,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Marsh Lake Park</name>
+            <description><![CDATA[location: Marsh Lake Park<br>latitude: 44.8311908<br>longitude: -93.3235116]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Marsh Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8311908</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3235116</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3235116,44.8311908,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Meadows Park</name>
+            <description><![CDATA[location: Meadows Park<br>latitude: 44.7518067<br>longitude: -93.1042271]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Meadows Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7518067</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1042271</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1042271,44.7518067,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Mendota Bridge underpass at Pilot Knob</name>
+            <description><![CDATA[location: Mendota Bridge underpass at Pilot Knob<br>latitude: 44.8827852<br>longitude: -93.1698997]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Mendota Bridge underpass at Pilot Knob</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8827852</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1698997</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1698997,44.8827852,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnehaha Creek</name>
+            <description><![CDATA[location: Minnehaha Creek<br>latitude: 44.9117339<br>longitude: -93.2601335]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnehaha Creek</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9117339</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2601335</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2601335,44.9117339,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnehaha Creek E of Lake Hiawatha</name>
+            <description><![CDATA[location: Minnehaha Creek E of Lake Hiawatha<br>latitude: 44.918899<br>longitude: -93.2260108]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnehaha Creek E of Lake Hiawatha</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.918899</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2260108</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2260108,44.918899,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnehaha Falls</name>
+            <description><![CDATA[location: Minnehaha Falls<br>latitude: 44.9153662<br>longitude: -93.2104111]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnehaha Falls</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9153662</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2104111</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2104111,44.9153662,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR</name>
+            <description><![CDATA[location: Minnesota Valley NWR<br>latitude: 44.8395<br>longitude: -93.2281]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8395</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2281</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2281,44.8395,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Artesian Well</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Artesian Well<br>latitude: 44.8264128<br>longitude: -93.2342398]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Artesian Well</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8264128</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2342398</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2342398,44.8264128,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Bass Ponds</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Bass Ponds<br>latitude: 44.84479<br>longitude: -93.23007]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Bass Ponds</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.84479</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.23007</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.23007,44.84479,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Bluffs Trail</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Bluffs Trail<br>latitude: 44.8207899<br>longitude: -93.2548321]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Bluffs Trail</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8207899</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2548321</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2548321,44.8207899,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Cliff Fen</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Cliff Fen<br>latitude: 44.7922822<br>longitude: -93.2741404]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Cliff Fen</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7922822</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2741404</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2741404,44.7922822,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Headquarters</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Headquarters<br>latitude: 44.8597018<br>longitude: -93.2141876]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Headquarters</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8597018</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2141876</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2141876,44.8597018,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Long Meadow Lake Trail</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Long Meadow Lake Trail<br>latitude: 44.8551318<br>longitude: -93.2090843]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Long Meadow Lake Trail</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8551318</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2090843</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2090843,44.8551318,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Valley NWR--Sorenson Landing</name>
+            <description><![CDATA[location: Minnesota Valley NWR--Sorenson Landing<br>latitude: 44.8012609<br>longitude: -93.2891972]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Valley NWR--Sorenson Landing</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8012609</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2891972</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2891972,44.8012609,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Minnesota Zoo</name>
+            <description><![CDATA[location: Minnesota Zoo<br>latitude: 44.7672972<br>longitude: -93.1958359]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Minnesota Zoo</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7672972</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1958359</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1958359,44.7672972,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Mississippi River Lock and Dam 1</name>
+            <description><![CDATA[location: Mississippi River Lock and Dam 1<br>latitude: 44.9164983<br>longitude: -93.2024288]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Mississippi River Lock and Dam 1</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9164983</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2024288</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2024288,44.9164983,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Mother Lake</name>
+            <description><![CDATA[location: Mother Lake<br>latitude: 44.8939491<br>longitude: -93.2397929]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Mother Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8939491</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2397929</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2397929,44.8939491,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Mound Springs Park</name>
+            <description><![CDATA[location: Mound Springs Park<br>latitude: 44.8210251<br>longitude: -93.2568026]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Mound Springs Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8210251</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2568026</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2568026,44.8210251,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Mound Springs Park--Woods at Water's Edge</name>
+            <description><![CDATA[location: Mound Springs Park--Woods at Water's Edge<br>latitude: 44.8153425<br>longitude: -93.2616091]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Mound Springs Park--Woods at Water's Edge</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8153425</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2616091</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2616091,44.8153425,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Mt. Normandale Lake Park</name>
+            <description><![CDATA[location: Mt. Normandale Lake Park<br>latitude: 44.8505089<br>longitude: -93.3564985]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Mt. Normandale Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8505089</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3564985</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3564985,44.8505089,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Nicols Rd Marsh</name>
+            <description><![CDATA[location: Nicols Rd Marsh<br>latitude: 44.824911<br>longitude: -93.2256889]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Nicols Rd Marsh</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.824911</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2256889</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2256889,44.824911,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Nine Mile Creek</name>
+            <description><![CDATA[location: Nine Mile Creek<br>latitude: 44.8062673<br>longitude: -93.3044976]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Nine Mile Creek</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8062673</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3044976</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3044976,44.8062673,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Normandale Community College campus</name>
+            <description><![CDATA[location: Normandale Community College campus<br>latitude: 44.8297913<br>longitude: -93.3328164]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Normandale Community College campus</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8297913</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3328164</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3328164,44.8297913,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Oak Hill Cemetery</name>
+            <description><![CDATA[location: Oak Hill Cemetery<br>latitude: 44.8954636<br>longitude: -93.286323]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Oak Hill Cemetery</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8954636</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.286323</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.286323,44.8954636,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Oheyawahi (Pilot Knob hill)</name>
+            <description><![CDATA[location: Oheyawahi (Pilot Knob hill)<br>latitude: 44.8809615<br>longitude: -93.1673026]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Oheyawahi (Pilot Knob hill)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8809615</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1673026</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1673026,44.8809615,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Old Cedar Ave. Bridge</name>
+            <description><![CDATA[location: Old Cedar Ave. Bridge<br>latitude: 44.8306236<br>longitude: -93.2436534]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Old Cedar Ave. Bridge</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8306236</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2436534</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2436534,44.8306236,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Parker’s Picnic Grounds</name>
+            <description><![CDATA[location: Parker’s Picnic Grounds<br>latitude: 44.8149755<br>longitude: -93.266353]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Parker’s Picnic Grounds</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8149755</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.266353</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.266353,44.8149755,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Patrick Eagan Park</name>
+            <description><![CDATA[location: Patrick Eagan Park<br>latitude: 44.8099454<br>longitude: -93.149928]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Patrick Eagan Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8099454</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.149928</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.149928,44.8099454,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Pauly’s Pond</name>
+            <description><![CDATA[location: Pauly’s Pond<br>latitude: 44.8527<br>longitude: -93.34202]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Pauly’s Pond</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8527</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.34202</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.34202,44.8527,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Penn Lake</name>
+            <description><![CDATA[location: Penn Lake<br>latitude: 44.8454544<br>longitude: -93.3052803]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Penn Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8454544</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3052803</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3052803,44.8454544,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Pond Dakota Mission Park</name>
+            <description><![CDATA[location: Pond Dakota Mission Park<br>latitude: 44.813088<br>longitude: -93.269581]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Pond Dakota Mission Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.813088</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.269581</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.269581,44.813088,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Quarry Point Park</name>
+            <description><![CDATA[location: Quarry Point Park<br>latitude: 44.7194135<br>longitude: -93.1811546]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Quarry Point Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7194135</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1811546</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1811546,44.7194135,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Rahn Park</name>
+            <description><![CDATA[location: Rahn Park<br>latitude: 44.7934548<br>longitude: -93.2108188]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Rahn Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7934548</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2108188</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2108188,44.7934548,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Red Oak Park</name>
+            <description><![CDATA[location: Red Oak Park<br>latitude: 44.7863774<br>longitude: -93.2341459]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Red Oak Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7863774</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2341459</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2341459,44.7863774,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Resurrection Cemetery (Dakota Co.)</name>
+            <description><![CDATA[location: Resurrection Cemetery (Dakota Co.)<br>latitude: 44.8775252<br>longitude: -93.1500721]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Resurrection Cemetery (Dakota Co.)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8775252</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1500721</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1500721,44.8775252,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Richfield Lake Park</name>
+            <description><![CDATA[location: Richfield Lake Park<br>latitude: 44.8859787<br>longitude: -93.2915533]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Richfield Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8859787</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2915533</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2915533,44.8859787,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Rogers Lake (Dakota Co.)</name>
+            <description><![CDATA[location: Rogers Lake (Dakota Co.)<br>latitude: 44.8726897<br>longitude: -93.140974]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Rogers Lake (Dakota Co.)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8726897</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.140974</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.140974,44.8726897,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Rudy Kraemer Nature Preserve</name>
+            <description><![CDATA[location: Rudy Kraemer Nature Preserve<br>latitude: 44.7734119<br>longitude: -93.3235788]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Rudy Kraemer Nature Preserve</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7734119</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3235788</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3235788,44.7734119,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Saint Paul--Homecroft Park</name>
+            <description><![CDATA[location: Saint Paul--Homecroft Park<br>latitude: 44.9010581<br>longitude: -93.1786036]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Saint Paul--Homecroft Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.9010581</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1786036</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1786036,44.9010581,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Savage Fen SNA</name>
+            <description><![CDATA[location: Savage Fen SNA<br>latitude: 44.7716906<br>longitude: -93.3566022]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Savage Fen SNA</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7716906</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3566022</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3566022,44.7716906,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>School of Environmental Studies</name>
+            <description><![CDATA[location: School of Environmental Studies<br>latitude: 44.7721705<br>longitude: -93.1909919]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>School of Environmental Studies</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7721705</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1909919</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1909919,44.7721705,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Schwarz Pond Park</name>
+            <description><![CDATA[location: Schwarz Pond Park<br>latitude: 44.7476512<br>longitude: -93.132128]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Schwarz Pond Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7476512</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.132128</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.132128,44.7476512,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Sibley Historic Site</name>
+            <description><![CDATA[location: Sibley Historic Site<br>latitude: 44.8875142<br>longitude: -93.1657898]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Sibley Historic Site</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8875142</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1657898</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1657898,44.8875142,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Skriebakken Lake</name>
+            <description><![CDATA[location: Skriebakken Lake<br>latitude: 44.8443529<br>longitude: -93.3331275]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Skriebakken Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8443529</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3331275</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3331275,44.8443529,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Slater Acres Park</name>
+            <description><![CDATA[location: Slater Acres Park<br>latitude: 44.783845<br>longitude: -93.220705]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Slater Acres Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.783845</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.220705</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.220705,44.783845,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Solomon Park</name>
+            <description><![CDATA[location: Solomon Park<br>latitude: 44.8966008<br>longitude: -93.2529911]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Solomon Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8966008</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2529911</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2529911,44.8966008,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>South River Hills Park</name>
+            <description><![CDATA[location: South River Hills Park<br>latitude: 44.7954157<br>longitude: -93.2344158]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>South River Hills Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7954157</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2344158</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2344158,44.7954157,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Southern Lakes Park</name>
+            <description><![CDATA[location: Southern Lakes Park<br>latitude: 44.7924105<br>longitude: -93.1036364]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Southern Lakes Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7924105</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1036364</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1036364,44.7924105,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Summerfield Park</name>
+            <description><![CDATA[location: Summerfield Park<br>latitude: 44.749969<br>longitude: -93.165662]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Summerfield Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.749969</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.165662</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.165662,44.749969,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Sunset Pond Park</name>
+            <description><![CDATA[location: Sunset Pond Park<br>latitude: 44.7485925<br>longitude: -93.3247375]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Sunset Pond Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7485925</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.3247375</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.3247375,44.7485925,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Taft Lake</name>
+            <description><![CDATA[location: Taft Lake<br>latitude: 44.8927948<br>longitude: -93.2520711]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Taft Lake</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8927948</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2520711</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2520711,44.8927948,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Terrace Oaks Park</name>
+            <description><![CDATA[location: Terrace Oaks Park<br>latitude: 44.7697712<br>longitude: -93.2417822]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Terrace Oaks Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7697712</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2417822</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2417822,44.7697712,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Thomas Lake Park</name>
+            <description><![CDATA[location: Thomas Lake Park<br>latitude: 44.7935309<br>longitude: -93.170414]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Thomas Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7935309</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.170414</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.170414,44.7935309,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Thresher Fields Park</name>
+            <description><![CDATA[location: Thresher Fields Park<br>latitude: 44.838215<br>longitude: -93.126538]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Thresher Fields Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.838215</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.126538</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.126538,44.838215,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Two Rivers Overlook</name>
+            <description><![CDATA[location: Two Rivers Overlook<br>latitude: 44.8956073<br>longitude: -93.1787062]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Two Rivers Overlook</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8956073</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1787062</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1787062,44.8956073,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Valley Lake Park</name>
+            <description><![CDATA[location: Valley Lake Park<br>latitude: 44.7161649<br>longitude: -93.209945]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Valley Lake Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7161649</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.209945</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.209945,44.7161649,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Valley Park</name>
+            <description><![CDATA[location: Valley Park<br>latitude: 44.8912539<br>longitude: -93.1273162]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Valley Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8912539</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1273162</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1273162,44.8912539,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Valleywood Golf Course</name>
+            <description><![CDATA[location: Valleywood Golf Course<br>latitude: 44.7685411<br>longitude: -93.1598192]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Valleywood Golf Course</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7685411</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1598192</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1598192,44.7685411,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Veterans Memorial Park</name>
+            <description><![CDATA[location: Veterans Memorial Park<br>latitude: 44.8874686<br>longitude: -93.2629395]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Veterans Memorial Park</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8874686</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2629395</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2629395,44.8874686,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>Wood Lake Nature Center</name>
+            <description><![CDATA[location: Wood Lake Nature Center<br>latitude: 44.8773731<br>longitude: -93.2931089]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>Wood Lake Nature Center</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8773731</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.2931089</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.2931089,44.8773731,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>stakeout Rufous Hummingbird, Eagan (2019)</name>
+            <description><![CDATA[location: stakeout Rufous Hummingbird, Eagan (2019)<br>latitude: 44.8213748<br>longitude: -93.1432678]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>stakeout Rufous Hummingbird, Eagan (2019)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.8213748</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.1432678</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.1432678,44.8213748,0 
+                </coordinates>
+            </Point> 
+        </Placemark>        
+        <Placemark>
+            <name>stakeout — SPTO, Dakota County 2023 (not exact location)</name>
+            <description><![CDATA[location: stakeout — SPTO, Dakota County 2023 (not exact location)<br>latitude: 44.7876969<br>longitude: -93.095449]]></description>
+            <styleUrl>#map_icon</styleUrl>
+            <ExtendedData>
+                <Data name="location">
+                    <value>stakeout — SPTO, Dakota County 2023 (not exact location)</value>
+                </Data>
+                <Data name="latitude">
+                    <value>44.7876969</value>
+                </Data>
+                <Data name="longitude">
+                    <value>-93.095449</value>
+                </Data> 
+            </ExtendedData>
+            <Point>
+                <coordinates>
+                    -93.095449,44.7876969,0 
+                </coordinates>
+            </Point> 
+        </Placemark>
+    </Document>
+</kml>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <name>Bloomington MN CBC Ebird Recent Sightings</name>
+    
+        <Style id="notable_confirmed_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/notable_confirmed.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
+        <Style id="notable_provisional_id">
+            <IconStyle>
+                <scale>1</scale>
+                <Icon>
+                    <href>images/notable_provisional.png</href>
+                </Icon>
+            </IconStyle>
+        </Style>
