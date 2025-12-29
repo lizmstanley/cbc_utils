@@ -1,6 +1,9 @@
 ## Mapping Utils
 
 One of the things I do leading up to the CBC is to provide a map of recent sightings found within the count circle, leveraging the eBird API.
+It originally started with CSV as the only output, but more recently I've been working on KML/KMZ output as well. Stay tuned for that. I also
+intend to package this up as a Python wheel for easier installation and use.
+
 
 This will pull the following from eBird, within the set radius:
 

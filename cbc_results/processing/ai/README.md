@@ -1,6 +1,7 @@
 ## 2025 Bloomington CBC: Liz’s process using AI to extract count data from 27 count sheets
 
 This is my first experiment with using AI to help compile this data. I’m using Google Gemini because I manage everything in the count with Google (sheets, sites, group mailing list, etc.) It was quite accurate in extracting count data from the sheets, whether sent as an image or a PDF, even when there was extraneous info on the sheet. The goal here is to improve accuracy which is very difficult to do when I have to hand transcribe these. And also save me time when there are so many results to process. Having gone through this, I can definitely say it was a huge time saver. As always with AI, make sure to check results! It’s a tool that is most effectively used by people who know what they are doing in the first place, not just blindly accepting whatever it tells you.
+Below are the steps I have used, with pretty accurate results. I will add examples and more documentation.
 
 1. Accept only digital or physical copies of the count sheet. Do not accept results as the body of an email, an eBird checklist, wrong count sheet etc. Everything needs to be submitted on the required sheet. If a physical sheet was submitted, take a picture and upload it yourself. I think I have beat this drum enough where almost everyone is quite cooperative at this point.
 1. Upload to Google Drive under CBC Results > 2025 > Count Sheets
