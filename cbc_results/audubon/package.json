@@ -1,0 +1,17 @@
+{
+  "name": "cbc_results",
+  "version": "1.0.0",
+  "main": "dist/audubon.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --experimental-strip-types audubon.ts"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "puppeteer": "^24.34.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  }
+}
