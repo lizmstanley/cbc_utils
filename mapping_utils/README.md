@@ -24,18 +24,14 @@ Within Google Maps, you can adjust the color and icons for the points.
 
 1. Clone this project
 2. Install pyenv, see https://github.com/pyenv/pyenv
-3. Install the python version seen in `.python-version` in this project
-   * Easy way to do that is `cat .python-version | xargs pyenv install`
-4. Install poetry: `pip install poetry`
-5. Create a virtual environment, example: `python -m venv ./.cbc-env && source ./.cbc-env/bin/activate`
-6. Install dependencies: `poetry lock && poetry install`
+3. To set up the project run `source ./setup.sh` in the root of the project.  
 
 
 ### Run
-1. Copy the `sample.env` to `.env` and set the values there.
+1. Update the values in `.env`.
    * You'll need to sign up for an eBird API key at ebird.org.
 2. `python src/circle_data.py`
 
 Here's an example of how this data can be used. Have a look at https://www.bloomingtoncbc.org/maps to see some more examples. Happy CBCing!
 
-![img.png](img.png)
+![img.png](../img.png)

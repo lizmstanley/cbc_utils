@@ -1,11 +1,20 @@
 [tool.poetry]
-name = "CBC Utils"
+name = "cbc_utils"
+packages = [
+    { include = "src" }
+]
 version = "0.1.0"
 description = "Utilities for the Christmas Bird Count"
 authors = ["Liz Stanley <lizmstanley@gmail.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
+geopy = "^2.4.1"
 python = "^3.13"
 python-dotenv = "1.0.1"
 requests = "^2.32.3"
 toml = "^0.10.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

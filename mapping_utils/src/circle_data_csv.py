@@ -1,32 +1,12 @@
 import csv
-import requests
 
-from src.settings import EBIRD_API_TOKEN, DISTANCE, DAYS_BACK, LONGITUDE, LATITUDE
-
-ebird_api_url = "https://api.ebird.org/v2"
-recent_obs_endpoint = f"{ebird_api_url}/data/obs/geo/recent"
-hotspots_endpoint = f"{ebird_api_url}/ref/hotspot/geo"
-request_headers = headers = {"X-eBirdApiToken": EBIRD_API_TOKEN, "Accept": "application/json"}
-request_params = {"lat": LATITUDE, "lng": LONGITUDE, "dist": DISTANCE}
-
-def fetch_ebird_data(url, params):
-    return requests.get(url, params=params, headers=request_headers).json()
-
-def fetch_ebird_obs(ob_type):
-   obs_url = recent_obs_endpoint
-   if ob_type == "notable":
-       obs_url += "/notable"
-   print(f"Fetching {ob_type} obs from {obs_url}")
-   return fetch_ebird_data(url=obs_url, params = request_params | {"back": DAYS_BACK, "includeProvisional": True})
-
-def fetch_ebird_hotspots():
-    print(f"Fetching hotspots from {hotspots_endpoint}")
-    return fetch_ebird_data(url=hotspots_endpoint, params=request_params | {"fmt": "json"})
+from mapping_utils.src.ebird import fetch_ebird_obs, fetch_ebird_hotspots
+from mapping_utils.src.root_dir import CSV_DIR
 
 def parse_obs(ob_type):
     obs = fetch_ebird_obs(ob_type)
-    obs_data_valid = open(f"cbc_{ob_type}_valid.csv", "w")
-    obs_data_provisional = open(f"cbc_{ob_type}_provisional.csv", "w")
+    obs_data_valid = open(f"{CSV_DIR}/cbc_{ob_type}_valid.csv", "w")
+    obs_data_provisional = open(f"{CSV_DIR}/cbc_{ob_type}_provisional.csv", "w")
     csv_writer_valid = csv.writer(obs_data_valid)
     print(f"Writing valid {ob_type} obs to {obs_data_valid.name}")
     csv_writer_provisional = csv.writer(obs_data_provisional)
@@ -45,7 +25,7 @@ def parse_obs(ob_type):
 
 def parse_ebird_hotspots():
     hotspots = fetch_ebird_hotspots()
-    hotspots_data = open("cbc_hotspots.csv", "w")
+    hotspots_data = open(f"{CSV_DIR}/cbc_hotspots.csv", "w")
     csv_writer_hotspots = csv.writer(hotspots_data)
     print(f"Writing hotspots to {hotspots_data.name}")
     header = ["name", "latitude", "longitude"]
