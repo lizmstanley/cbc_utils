@@ -1,5 +1,5 @@
 *.csv
-mapping_utils/.env
+mapping-utils/.env
 .cbc-env/
 .idea/
 
