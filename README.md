@@ -1,6 +1,7 @@
 ## CBC Utils
 
-I'm the coordinator for the [Bloomington, MN Christmas Bird Count (CBC)](https://www.bloomingtoncbc.org/). This project is a collection of utilities to help with the CBC.
+I'm the coordinator for the [Bloomington, MN Christmas Bird Count (CBC)](https://www.bloomingtoncbc.org/). I also happen to be a software engineer who works with Python and Typescript.
+This project is a collection of utilities to help with the CBC.
 
 I have a bunch of things scattered about at the moment, and I'm working to organize them and build up a comprehensive set of tools. My motivation
 for doing this is that my count circle is very complex, containing 24 areas over which I have to manage 50+ participants, and compile data from a few
