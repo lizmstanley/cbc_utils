@@ -1,24 +1,39 @@
 import * as puppeteer from 'puppeteer';
 import {Page} from 'puppeteer';
 import * as dotenv from 'dotenv';
+import * as path from 'path';
+import {fileURLToPath} from 'url';
 
-dotenv.config();
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+dotenv.config({path: path.join(__dirname, '.env')});
 
 const EMAIL = process.env.EMAIL;
 const PASSWORD = process.env.PASSWORD;
 const CIRCLE_NAME = process.env.CIRCLE_NAME;
+const SHOW_BROWSER = !!process.env.SHOW_BROWSER;
 // This url works for login without having to wait at all!
 const LOGIN_URL = 'https://netapp.audubon.org/aap/application/cbc';
 // Once we're in, use this base URL for navigation
 const BASE_CBC_URL = 'https://netapp.audubon.org/CBC';
 
 async function main() {
-    const browser = await puppeteer.launch({headless: true});
+    const puppeteerOpts = SHOW_BROWSER ? {
+        headless: false,
+        slowMo: 100,
+        args: [`--window-size=1920,1080`]
+    } : {}
+    const browser = await puppeteer.launch(puppeteerOpts);
     const page: Page = await browser.newPage();
+    if(SHOW_BROWSER) {
+        await page.setViewport({width: 1920, height: 1080});
+    }
+
     try {
         await login(page);
         await selectCircle(page);
         await setStartEndTime(page);
+        await enterChecklistCounts(page);
         await logout(page);
     } catch (error) {
         console.error('An error occurred:', error);
@@ -32,10 +47,11 @@ async function login(page: Page) {
     await page.goto(LOGIN_URL);
 
     console.log('Filling in login form with email and password');
-    await page.type('input[type="text"]', EMAIL || '');
-    await page.type('input[type="password"]', PASSWORD || '');
+    await page.focus('input[type="text"]');
+    await page.keyboard.type(EMAIL!);
+    await page.focus('input[type="password"]');
+    await page.keyboard.type(PASSWORD!);
     await page.click('#contentMain_rpnlLogin_bLogin');
-    await page.waitForNavigation({timeout: 10000});
 
     if (!(await isAuthenticated(page))) {
         throw new Error("Login failed: Authentication cookie not found");
@@ -124,6 +140,57 @@ async function setStartEndTime(page: Page) {
         console.log('Set start and end times successfully');
     }
 }
+
+async function enterChecklistCounts(page: Page) {
+    await page.goto(`${BASE_CBC_URL}/Compiler/BirdChecklist.aspx`);
+
+    const testSpecies = [{commonName: 'American Robin', count: 5}, {commonName: 'Northern Cardinal', count: 3}];
+
+    for (const species of testSpecies) {
+        console.log(`Entering count for ${species.commonName}: ${species.count}`);
+        await enterChecklistCount(page, species.commonName, species.count);
+    }
+}
+
+async function enterChecklistCount(page: Page, speciesCommonName: string, count: number) {
+    const addSpeciesButton = await page.$("#btnAddSpeciesRow");
+    if (addSpeciesButton) {
+        await addSpeciesButton.click();
+    }
+    const timeout = 5000;
+    //thank goodness for Chrome dev tools recorder exporting puppeteer code!
+    await typeSpeciesName(page, speciesCommonName, timeout);
+
+    const countSelector = await page.waitForSelector("#gvBirdChecklist_tccell0_4 > input[type='text'].count", {timeout: 5000});
+    if (countSelector) {
+        await page.click('#gvBirdChecklist_tccell0_4 > input[type="text"].count');
+        await page.keyboard.type(`${count}`, {delay: 100});
+        await page.keyboard.press('Enter')
+    }
+    // Wait for "Saved" confirmation
+    await page.waitForSelector('xpath///*[@id="ajaxError" and contains(., "Saved")]', {timeout: 5000});
+}
+
+async function typeSpeciesName(page: Page, speciesCommonName: string, timeout: number) {
+    await puppeteer.Locator.race([
+        page.locator('#gvBirdChecklist_DXFREditorcol2_I'),
+        page.locator('::-p-xpath(//*[@id=\\"gvBirdChecklist_DXFREditorcol2_I\\"])'),
+        page.locator(':scope >>> #gvBirdChecklist_DXFREditorcol2_I')
+    ])
+        .setTimeout(timeout)
+        .click();
+    await puppeteer.Locator.race([
+        page.locator('#gvBirdChecklist_DXFREditorcol2_I'),
+        page.locator('::-p-xpath(//*[@id=\\"gvBirdChecklist_DXFREditorcol2_I\\"])'),
+        page.locator(':scope >>> #gvBirdChecklist_DXFREditorcol2_I')
+    ])
+        .setTimeout(timeout)
+        .fill(speciesCommonName);
+    await page.keyboard.down('Enter');
+    await page.keyboard.up('Enter');
+}
+
+
 
 async function logout(page: Page) {
     console.log("Logging out");
