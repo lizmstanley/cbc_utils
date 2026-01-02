@@ -1,6 +1,6 @@
 import requests
 
-from mapping_utils.src.settings import CIRCLE_CENTER_LATITUDE, EBIRD_API_TOKEN, CIRCLE_CENTER_LONGITUDE, CIRCLE_RADIUS_KM, OBS_DAYS_BACK
+from settings import CIRCLE_CENTER_LATITUDE, EBIRD_API_TOKEN, CIRCLE_CENTER_LONGITUDE, CIRCLE_RADIUS_KM, OBS_DAYS_BACK
 
 ebird_api_url = "https://api.ebird.org/v2"
 recent_obs_endpoint = f"{ebird_api_url}/data/obs/geo/recent"

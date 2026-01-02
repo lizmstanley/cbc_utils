@@ -3,10 +3,10 @@ import zipfile
 from enum import StrEnum, auto
 from xml.sax.saxutils import escape
 
-from mapping_utils.src.create_simple_kml_circle import create_simple_kml_circle
-from mapping_utils.src.ebird import fetch_ebird_obs, fetch_ebird_hotspots
-from mapping_utils.src.root_dir import KML_DIR
-from mapping_utils.src.settings import CIRCLE_KML_FILE, CBC_NAME
+from create_simple_kml_circle import create_simple_kml_circle
+from ebird import fetch_ebird_obs, fetch_ebird_hotspots
+from root_dir import KML_DIR
+from settings import CIRCLE_KML_FILE, CBC_NAME
 
 
 class ObType(StrEnum):

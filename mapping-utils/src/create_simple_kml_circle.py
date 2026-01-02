@@ -1,8 +1,8 @@
 from geopy import Point
 from geopy.distance import geodesic
 
-from mapping_utils.src.root_dir import KML_DIR
-from mapping_utils.src.settings import CIRCLE_LINE_COLOR, CIRCLE_LINE_WIDTH, CIRCLE_CENTER_LONGITUDE, CIRCLE_RADIUS_KM, CBC_NAME, \
+from root_dir import KML_DIR
+from settings import CIRCLE_LINE_COLOR, CIRCLE_LINE_WIDTH, CIRCLE_CENTER_LONGITUDE, CIRCLE_RADIUS_KM, CBC_NAME, \
     CIRCLE_CENTER_LATITUDE, CIRCLE_KML_FILE
 
 

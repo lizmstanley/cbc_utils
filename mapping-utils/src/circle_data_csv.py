@@ -1,7 +1,7 @@
 import csv
 
-from mapping_utils.src.ebird import fetch_ebird_obs, fetch_ebird_hotspots
-from mapping_utils.src.root_dir import CSV_DIR
+from ebird import fetch_ebird_obs, fetch_ebird_hotspots
+from root_dir import CSV_DIR
 
 def parse_obs(ob_type):
     obs = fetch_ebird_obs(ob_type)
