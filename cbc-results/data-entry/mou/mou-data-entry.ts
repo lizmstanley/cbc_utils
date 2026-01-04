@@ -2,8 +2,12 @@ import * as puppeteer from 'puppeteer';
 import {Page} from 'puppeteer';
 import * as dotenv from 'dotenv';
 import * as path from 'path';
+import {fileURLToPath} from "url";
+import {dirname} from "path";
 
-dotenv.config({path: path.join(__dirname, '.audubon-env')});
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+dotenv.config({path: path.join(__dirname, '.mou.env')});
 
 const COMPILER_FIRST_NAME = process.env.COMPILER_FIRST_NAME;
 const COMPILER_LAST_NAME = process.env.COMPILER_LAST_NAME;

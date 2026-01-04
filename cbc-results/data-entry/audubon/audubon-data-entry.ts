@@ -19,7 +19,7 @@ import {initializeDatabase} from "../util/database";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config({path: path.join(__dirname, '.audubon-env')});
+dotenv.config({path: path.join(__dirname, '.audubon.env')});
 
 const EMAIL = process.env.EMAIL;
 const PASSWORD = process.env.PASSWORD;
