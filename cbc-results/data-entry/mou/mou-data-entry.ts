@@ -2,20 +2,17 @@ import * as puppeteer from 'puppeteer';
 import {Page} from 'puppeteer';
 import * as dotenv from 'dotenv';
 import * as path from 'path';
-import {fileURLToPath} from 'url';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-dotenv.config({path: path.join(__dirname, '.env')});
+dotenv.config({path: path.join(__dirname, '.audubon-env')});
 
-const EMAIL = process.env.EMAIL;
+const COMPILER_FIRST_NAME = process.env.COMPILER_FIRST_NAME;
+const COMPILER_LAST_NAME = process.env.COMPILER_LAST_NAME;
+const LOGIN_NAME = `${COMPILER_LAST_NAME}, ${COMPILER_FIRST_NAME}`;
 const PASSWORD = process.env.PASSWORD;
 const CIRCLE_NAME = process.env.CIRCLE_NAME;
 const SHOW_BROWSER = !!process.env.SHOW_BROWSER;
-// This url works for login without having to wait at all!
-const LOGIN_URL = 'https://netapp.audubon.org/aap/application/cbc';
-// Once we're in, use this base URL for navigation
-const BASE_CBC_URL = 'https://netapp.audubon.org/CBC';
+const BASE_CBC_URL = 'https://moumn.org/CBC/';
+const LOGIN_URL = `${BASE_CBC_URL}/compilers_login.php`;
 
 async function main() {
     const puppeteerOpts = SHOW_BROWSER ? {
@@ -25,13 +22,13 @@ async function main() {
     } : {}
     const browser = await puppeteer.launch(puppeteerOpts);
     const page: Page = await browser.newPage();
-    if(SHOW_BROWSER) {
+    if (SHOW_BROWSER) {
         await page.setViewport({width: 1920, height: 1080});
     }
 
     try {
         await login(page);
-        await selectCircle(page);
+        await clickEditDataLink(page);
         await setStartEndTime(page);
         await enterChecklistCounts(page);
         await logout(page);
@@ -46,58 +43,40 @@ async function login(page: Page) {
     console.log(`Navigating to ${LOGIN_URL}`);
     await page.goto(LOGIN_URL);
 
-    console.log('Filling in login form with email and password');
-    await page.focus('input[type="text"]');
-    await page.keyboard.type(EMAIL!);
+    console.log('Entering login name and password');
+    await page.select('input[type="select"]', LOGIN_NAME!);
     await page.focus('input[type="password"]');
     await page.keyboard.type(PASSWORD!);
-    await page.click('#contentMain_rpnlLogin_bLogin');
+    await page.click('input[type="submit" value="Login"]');
+
+    await page.waitForNavigation();
 
     if (!(await isAuthenticated(page))) {
         throw new Error("Login failed: Authentication cookie not found");
     }
 
-    if (await page.$("#contentMain_rpnlLogin_pnlInvalidLogin")) {
-        throw new Error("Login failed: Invalid credentials");
+    const invalidLoginMessage = await page.waitForSelector("xpath//html/body/table/tbody/tr[3]/td[2]/font/p[1]/font[contains(text(), 'The password entered does not match the password on file!')]", {timeout: 5000});
+    if (invalidLoginMessage) {
+        if ((await invalidLoginMessage.evaluate(el => el.textContent))?.includes("The password entered does not match the password on file!")) {
+            throw new Error("Login failed: Invalid credentials");
+        }
     }
-    // Checking for this page to ensure we're actually logged in with the full menu available
-    console.log('Checking for login confirmation page');
 
-    const loginDiv = await page.waitForSelector("xpath//html/body/form/div[3]/div[3]/div/div/div[2]/div[1]/div[1]/div[1]", {timeout: 5000});
-    let isLoggedIn = false;
-    if (loginDiv) {
-        isLoggedIn = await loginDiv.evaluate((node, email) =>
-                node.textContent?.includes(`You are logged in as: ${email!.toUpperCase()}`),
-            EMAIL
-        );
-    }
-    if (!isLoggedIn) {
+    console.log('Checking for login confirmation page');
+    const compilersLoginPageMessage = await page.waitForSelector(`xpath///html/body/table/tbody/tr[3]/td[2]/h3/font[contains(text(), "${COMPILER_FIRST_NAME} ${COMPILER_LAST_NAME}'s Compiler Page")]`, {timeout: 5000});
+
+    if (!compilersLoginPageMessage) {
         throw new Error('Login confirmation not found, login may have failed');
     }
     console.log('Login successful');
 }
 
-// Have to select the circle before proceeding with anything else
-async function selectCircle(page: Page) {
-    console.log(`Selecting circle: ${CIRCLE_NAME}`);
+async function clickEditDataLink(page: Page) {
+    console.log(`Clicking Edit Data link`);
 
-    const circleMenuItem = await page.$("a[href*='circleid']");
-    if (circleMenuItem) {
-        const isCircle = await circleMenuItem.evaluate(
-            (el, circleName) => el.innerText === circleName,
-            CIRCLE_NAME
-        );
-        if (isCircle) {
-            const circleHref = await circleMenuItem.evaluate(el => el.getAttribute('href'));
-            if (circleHref) {
-                console.log(`Navigating to circle page: ${circleHref}`);
-                await page.goto(`${BASE_CBC_URL}/${circleHref}`);
-                console.log(`Selected circle ${CIRCLE_NAME}`);
-                return;
-            }
-        }
-    }
-    throw new Error(`Unable to select circle ${CIRCLE_NAME}`);
+    const editDataLink = await page.$("body > table > tbody > tr:nth-child(3) > td:nth-child(2) > font > table > tbody > tr:nth-child(3) > td:nth-child(4) > a");
+    await editDataLink?.click();
+    await page.waitForNavigation();
 }
 
 async function setStartEndTime(page: Page) {
@@ -152,23 +131,21 @@ async function enterChecklistCounts(page: Page) {
     }
 }
 
-async function enterChecklistCount(page: Page, speciesCommonName: string, count: number) {
-    const addSpeciesButton = await page.$("#btnAddSpeciesRow");
-    if (addSpeciesButton) {
-        await addSpeciesButton.click();
+async function enterChecklistCount(page: Page, speciesCommonName: string, count: number | string) {
+    const speciesRow = await page.$(`xpath///html/body/table/tbody/tr[6]/td/form/fieldset/table/tbody/tr[td[contains(text(),'${speciesCommonName}')]]`);
+    if (speciesRow) {
+        const inputs = await speciesRow.$$('td:has(input)');
+        if(typeof count == "number") {
+            await inputs[0].click({count: 2});
+            await page.keyboard.type(`${count}`, {delay: 100});
+            await page.keyboard.press('Enter');
+            await inputs[1].click({count: 2});
+            await page.keyboard.type(`${count}`, {delay: 100});
+            await page.keyboard.press('Enter');
+        } else if (count === "cw") {
+            await inputs[2].click();
+        }
     }
-    const timeout = 5000;
-    //thank goodness for Chrome dev tools recorder exporting puppeteer code!
-    await typeSpeciesName(page, speciesCommonName, timeout);
-
-    const countSelector = await page.waitForSelector("#gvBirdChecklist_tccell0_4 > input[type='text'].count", {timeout: 5000});
-    if (countSelector) {
-        await page.click('#gvBirdChecklist_tccell0_4 > input[type="text"].count');
-        await page.keyboard.type(`${count}`, {delay: 100});
-        await page.keyboard.press('Enter')
-    }
-    // Wait for "Saved" confirmation
-    await page.waitForSelector('xpath///*[@id="ajaxError" and contains(., "Saved")]', {timeout: 5000});
 }
 
 async function typeSpeciesName(page: Page, speciesCommonName: string, timeout: number) {
@@ -191,7 +168,6 @@ async function typeSpeciesName(page: Page, speciesCommonName: string, timeout: n
 }
 
 
-
 async function logout(page: Page) {
     console.log("Logging out");
     await page.goto(`${BASE_CBC_URL}/Account/logout.aspx`);
@@ -202,13 +178,14 @@ async function logout(page: Page) {
 
 async function isAuthenticated(page: Page) {
     const cookies = await page.browserContext().cookies();
-    const authCookie = cookies.find(cookie => cookie.domain === "netapp.audubon.org" && cookie.name === 'ckAAPAuthentication' && cookie.value.startsWith(`Username=${EMAIL}`));
-    return !!authCookie;
+    return !!(cookies.find(cookie => cookie.domain === "moumn.org" && cookie.name === 'first_name' && cookie.value === COMPILER_FIRST_NAME))
+        && !!(cookies.find(cookie => cookie.domain === "moumn.org" && cookie.name === 'last_name' && cookie.value === COMPILER_LAST_NAME)) &&
+        !!(cookies.find(cookie => cookie.domain === "moumn.org" && cookie.name === 'compiler_id'));
 }
 
 (async () => {
-    if (!EMAIL || !PASSWORD) {
-        console.error('EMAIL and PASSWORD must be set in environment variables.');
+    if (!COMPILER_FIRST_NAME || !COMPILER_FIRST_NAME || !PASSWORD) {
+        console.error('COMPILER_FIRST_NAME, COMPILER_LAST_NAME and PASSWORD must be set in environment variables.');
         process.exit(1);
     }
     if (!CIRCLE_NAME) {

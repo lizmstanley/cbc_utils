@@ -15,7 +15,7 @@ fi
 cat .python-version | xargs pyenv install
 python -m venv ./.venv && source ./.venv/bin/activate
 poetry lock && poetry install
-if ! [ -f .env ]; then
+if ! [ -f .aubuon-env ]; then
   echo ".env file not found, copying sample.env to .env"
-  cp sample.env .env
+  cp sample.env .aubuon-env
 fi

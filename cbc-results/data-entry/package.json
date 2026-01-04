@@ -2,17 +2,24 @@
   "name": "cbc_results",
   "version": "1.0.0",
   "main": "dist/audubon.js",
+  "type": "module",
   "scripts": {
     "build": "tsc",
-    "start-audubon": "node --experimental-strip-types audubon/audubon.ts"
+    "start-audubon": "tsx audubon/audubon-data-entry.ts"
   },
   "dependencies": {
-    "csv-parser": "^3.2.0",
+    "convert-time": "0.3.0",
+    "csvtojson": "^2.0.14",
+   "csv-parser": "^3.0.0",
     "dotenv": "^17.2.3",
-    "puppeteer": "^24.34.0"
+    "puppeteer": "^24.34.0",
+    "better-sqlite3": "^12.5.0"
   },
   "devDependencies": {
     "@types/node": "^25.0.3",
-    "typescript": "^5.9.3"
+    "@types/better-sqlite3": "^7.4.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.9.3",
+    "tsx": "^3.12.7"
   }
 }
