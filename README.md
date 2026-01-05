@@ -23,11 +23,11 @@ I manage everything in Google, because it includes all of the tools which makes 
 
 Mainly what's here right now is:
 
-1. Mapping utilities to pull recent eBird sightings within the count circle, and generate CSV/KML files that can be imported into Google Maps.
-1. AI utilities to help extract data from submitted count sheets, created CSVs from that, and generate summaries.
-1. Google Apps Scripts to help process CBC data in Google Sheets (checking results from AI transcribed totals).
-1. Scripts to help automate data entry into the Audubon CBC website, leveraging Puppeteer to automate web browser actions.
+1. [Mapping utilities](mapping-utils) to pull recent eBird sightings within the count circle, and generate CSV/KML files that can be imported into Google Maps.
+1. [AI utilities](cbc-results/data-processing/ai) to help extract data from submitted count sheets, created CSVs from that, and generate summaries.
+1. [Google Apps Scripts](cbc-results/data-processing/google-app-scripts) to help process CBC data in Google Sheets (checking results from AI transcribed totals).
+1. Scripts to help automate [data entry into the Audubon CBC website](cbc-results/data-entry/audubon), leveraging Puppeteer to automate web browser actions.
    2. Have a look at the [README in the data-entry directory](cbc-results/data-entry/README.md) for more details on that.
-2. Scripts to help with participant management, and documentation/examples of my process and tools I use for that.
+2. Scripts to help with [participant management](participant-utils), and documentation/examples of my process and tools I use for that.
 
 This is still very much a work in progress. I will add more documentation and examples as I get time.
