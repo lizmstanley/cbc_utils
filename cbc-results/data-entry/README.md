@@ -108,9 +108,10 @@ at `csv-data-files/cbc-results-example.csv`.) Decimal numbers will be rounded.
     * Total Miles Cross Country Skiing
   * Also distance is assumed to be in miles
 * Enter species counts
-  * If there is a problem with a species name, review your CSV file and ensure it is found in the mn-cbc-species.csv file
+  * If there is a problem with a species name, review your CSV file and ensure it is found in the [list of MN CBC species](csv-data-files/mn-cbc-species.csv), which is loaded into the database cross-referenced during data entry
+    * A future improvement would be to allow the user to provide a file for their state/province's species list
 * Set the total number of species
-  * Follows the NAS instructions regarding AOU "real" species vs. "countable" species and generic/"sp." entries
+  * Follows the NAS instructions regarding AOU "real" species vs. "countable" species and generic/"sp." entries by cross-referencing with the [NACC species list](csv-data-files/NACC_list_species.csv) that was loaded into the database
   * Double check this number before final submission
 * Logout of the NAS CBC website
 
