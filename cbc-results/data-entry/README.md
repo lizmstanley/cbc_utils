@@ -2,7 +2,7 @@
 
 ### Intro, aka Liz's mini-rant about current state of CBC data entry
 
-This is to help automate the data entry for the Audubon Christmas Bird Count (CBC).
+This is to help automate the data entry for the [Audubon Christmas Bird Count (CBC)](https://www.audubon.org/community-science/christmas-bird-count).
 If you're a CBC compiler, you know that entering data into the Audubon CBC website can be tedious
 and quite honestly, frustrating.  
 
@@ -17,12 +17,12 @@ outdated and frustrating MOU website.
 It's error-prone and time-consuming. I have gotten to the point of being so annoyed by it all, 
 that I am going to automate the whole thing to make my life easier, and if you are reading this, hopefully yours too.
 
-Since here in MN not only do we have to enter data into the Audubon CBC website, but also into the [Minnesota Ornithologists' Union (MOU) website](https://moumn.org/CBC/, 
+Since here in MN not only do we have to enter data into the [Audubon CBC website](https://netapp.audubon.org/aap/application/cbc), but also into the [Minnesota Ornithologists' Union (MOU) website](https://moumn.org/CBC/), 
 I plan to implement Puppeteer for both. Neither site provides an API or a way to upload CSV files, so scraping the website is a workaround 
 to automate the data entry process. Both sites are rather dated, and unsophisticated in their auth/security (thankfully) which makes this somewhat
 easy to do. 
 
-These tools are written in TypeScript and run on Node.js. The main reason for that is to use Puppeteer, which is a well known web scraping library. 
+These tools are written in TypeScript and run on Node.js. The main reason for that is to use [Puppeteer](https://pptr.dev/), which is a well known web scraping library. 
 This way we can programmatically access the websites, login, and enter data.
 
 ## Setup
