@@ -36,6 +36,7 @@ export function isAouRealSpecies(commonName: string): boolean {
         console.info(`\n
             Species ${commonName} not found in the AOU real species list,
             and will not be automatically included in the total species calculation for the CBC website, per NAS instructions. 
+            Subspecies are generally not considered "real" species for the total species count.
             If it is a generic "sp." it can be included in the total species count IF there is no other real species of that type reported.
             This will require manual review and entry.`);
         return false;
@@ -45,13 +46,13 @@ export function isAouRealSpecies(commonName: string): boolean {
 
 export async function skipExistingInput(page: Page, htmlInputSelector: string, field: string, value: string | number): Promise<boolean> {
     const existingVal = await page.$eval(htmlInputSelector, (input) => (input as HTMLInputElement).value);
-    if (isNumeric(existingVal) && (typeof value === 'number')) {
-        if (Number(existingVal) === value) {
+    if (value && isNumeric(existingVal) && typeof value === "number" || (typeof value === "string" && isNumeric(value))) {
+        if (Number(existingVal) === Number(value)) {
             console.log(`Numeric value for ${field} already set to ${value}, skipping`);
             return true;
         }
     }
-    if (existingVal && existingVal.trim() === value) {
+    if (existingVal && existingVal.toLowerCase().trim() === value) {
         console.log(`Value for ${field} already set to ${value}, skipping`);
         return true;
     }
@@ -85,14 +86,12 @@ export async function enterInputText(page: Page, htmlInputSelector: string, fiel
         console.warn(`No value provided for ${field}`);
         return;
     }
+    if (isFinite(Number(value)) && !Number.isInteger(value)) {
+        // Steve doesn't want decimals
+        value = Math.round(value as number);
+    }
     if (await skipExistingInput(page, htmlInputSelector, field, value)) {
         return;
-    }
-    if (typeof value === 'number') {
-        if (value % 1 !== 0) {
-            // Steve doesn't want decimals
-            value = Math.round(value);
-        }
     }
     const inputValue = typeof value === 'number' ? value.toString() : value;
     await page.click(htmlInputSelector, {count: 2, delay: 100});

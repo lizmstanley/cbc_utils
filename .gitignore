@@ -217,3 +217,4 @@ data/
 
 **/.*.env
 **/.env
+/cbc-results/data-entry/cbc_database.db

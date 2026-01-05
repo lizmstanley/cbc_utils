@@ -20,19 +20,19 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 dotenv.config({path: path.join(__dirname, '.audubon.env')});
+dotenv.config({path: path.join(__dirname, '..', '.env')});
 
 const EMAIL = process.env.EMAIL;
 const PASSWORD = process.env.PASSWORD;
 const CIRCLE_NAME = process.env.CIRCLE_NAME;
 
-const SHOW_BROWSER = !!process.env.SHOW_BROWSER;
+const SHOW_BROWSER = process.env.SHOW_BROWSER === undefined || !!process.env.SHOW_BROWSER;
 // This url works for login without having to wait at all!
 const LOGIN_URL = 'https://netapp.audubon.org/aap/application/cbc';
 // Once we're in, use this base URL for navigation
 const BASE_CBC_URL = 'https://netapp.audubon.org/CBC';
 
 async function main() {
-    initializeDatabase();
     const puppeteerOpts = SHOW_BROWSER ? {
         headless: false,
         slowMo: 100,
@@ -234,8 +234,7 @@ async function setEffort(page: Page) {
 
     await enterInputText(page, "#txtTotalNumber", "Total Number of Field Counters", getResultValue("effort", "Total Number of Field Counters"));
     await enterInputText(page, "#txtMaximumNumber", "Max Number of Parties", getResultValue("effort", "Max Number of Parties"));
-    // Setting to same number as max parties since CBC website requires both and I don't track who is out when
-    await enterInputText(page, "#txtMinimumNumber", "Max Number of Parties", getResultValue("effort", "Max Number of Parties"));
+    await enterInputText(page, "#txtMinimumNumber", "Min Number of Parties", getResultValue("effort", "Min Number of Parties"));
     await enterInputText(page, "#txtTotalNumberFeeders", "Total Number of Feeder Counters", getResultValue("effort", "Total Number of Feeder Counters"));
     // Not setting units for these because the website defaults to miles already
     await enterInputText(page, "#txtTransportationHours_13", "Total Hours By Foot", getResultValue("effort", "Total Hours By Foot"));
@@ -244,10 +243,10 @@ async function setEffort(page: Page) {
     await enterInputText(page, "#txtTransportationHours_14", "Total Hours By Vehicle", getResultValue("effort", "Total Hours By Vehicle"));
     await enterInputText(page, "#txtTransportationDistance_14", "Total Miles By Vehicle", getResultValue("effort", "Total Miles By Vehicle"));
     await enterInputText(page, "#txtTransportationHours_9", "Total Hours Cross Country Skiing", getResultValue("effort", "Total Hours Cross Country Skiing"));
-    await enterInputText(page, "#txtTransportationDistance_9", "Total Hours Feeder Watching", getResultValue("effort", "Total Hours Feeder Watching"));
+    await enterInputText(page, "#txtTransportationDistance_9", "Total Hours Cross Country Skiing", getResultValue("effort", "Total Miles Cross Country Skiing"));
     // At the moment we don't have any other transportation types
-
-    await enterInputText(page, "#ctl00$MainContent$txtOtherFeedersHours", "Total Hours Cross Country Skiing", getResultValue("effort", "Total Hours Cross Country Skiing"));
+    await enterInputText(page, "#txtOtherFeedersHours", "Total Hours Feeder Watching", getResultValue("effort", "Total Hours Feeder Watching"));
+    // Not supporting owling/noctural effort at the moment
 }
 
 async function enterChecklistCounts(page: Page) {
@@ -305,6 +304,7 @@ async function enterTotalSpeciesCount(page: Page, totalSpeciesCount: number) {
     console.log("Entering total species count");
     const totalSpeciesInputSelector = "#TotalSpecies";
     await enterInputText(page, totalSpeciesInputSelector, "Total Species Count", totalSpeciesCount);
+    await page.waitForSelector('xpath///*[@id="ajaxFiredTotalSpecies" and contains(., "Saved")]', {timeout: 5000});
 }
 
 async function typeSpeciesName(page: Page, speciesCommonName: string, timeout: number) {
@@ -342,12 +342,21 @@ async function isAuthenticated(page: Page) {
 
 (async () => {
     if (!EMAIL || !PASSWORD) {
-        console.error('EMAIL and PASSWORD must be set in environment variables.');
+        console.error('EMAIL and PASSWORD must be set in environment variables. These are your Audubon CBC website login credentials.');
         process.exit(1);
     }
     if (!CIRCLE_NAME) {
-        console.error('CIRCLE NAME must be set in environment variables.');
+        console.error('CIRCLE NAME must be set in environment variables. This is the value seen under the "Select Circle" menu item on the Audubon CBC website.');
         process.exit(1);
     }
+    initializeDatabase();
     await main();
+    console.log(`Next steps that need to be done manually:`
+    + `\n 1. Review the README in this project`
+    + `\n 2. Review the entered data on the Audubon CBC website - you can pull your count summary report to see the numbers.`
+    + `\n 3. Check any generic "sp." entries to see if they need to be included in the total species count.`
+    + `\n 4. Flag any high/low/unusual species.`
+    + `\n 5. Enter any optional special aspects for this count.`
+    + `\n 6. After all required sections are complete, submit the count for review and final submission to CBC/NAS.`
+    );
 })();
