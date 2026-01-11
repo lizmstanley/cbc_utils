@@ -4,13 +4,13 @@ import * as dotenv from 'dotenv';
 import * as path from 'path';
 import {dirname} from 'path';
 
-// @ts-expect-error
-import convertTime from 'convert-time';
 import {
+    CbcResultRow,
     enterDropdownText,
     enterInputText,
-    getResultsByType,
-    getResultValue, isAouRealSpecies,
+    getQualifiedResultValue,
+    getResultsByTypeAndName,
+    isAouRealSpecies,
     isExpectedMnCbcSpecies,
 } from "../util/common-utils";
 import {fileURLToPath} from "url";
@@ -127,27 +127,30 @@ async function setStartEndTime(page: Page) {
         return;
     }
 
-    function convert24HrTime(timeStr: string) {
-        return convertTime(timeStr.replace(/^0/, ""), "hh MM A").split(" ");
-    }
-
     function roundToNearest15(num: number) {
         return `${Math.round(num / 15) * 15}`;
     }
 
-    const startTime = getResultValue("time", "Start");
-    const endTime = getResultValue("time", "End");
-    if (startTime !== null) {
-        const [startHour, startMin, startAMPM] = convert24HrTime(startTime as string);
+    const startTime = getResultsByTypeAndName("time", "Start");
+    const endTime = getResultsByTypeAndName("time", "End");
+
+    if (startTime) {
+        if (startTime.length > 1) {
+            console.warn(`Multiple start times found, using the first one: ${startTime}`);
+        }
+        const [startHour, startMin] = startTime[0].value.split(":").map(Number);
         await enterDropdownText(page, "#StartTimeHour_I", "Start Hour", startHour);
         await enterDropdownText(page, '#StartTimeMin_I', "Start Minute", roundToNearest15(startMin));
-        await enterDropdownText(page, '#StartTimeAMPM_I', "Start AM/PM", startAMPM);
+        await enterDropdownText(page, '#StartTimeAMPM_I', "Start AM/PM", startTime[0].qualifier);
     }
-    if (endTime !== null) {
-        const [endHour, endMin, endAMPM] = convert24HrTime(endTime as string);
+    if (endTime) {
+        if (endTime.length > 1) {
+            console.warn(`Multiple end times found, using the first one: ${endTime}`);
+        }
+        const [endHour, endMin] = endTime[0].value.split(":").map(Number);
         await enterDropdownText(page, '#EndTimeHour_I', "End Hour", endHour);
         await enterDropdownText(page, '#EndTimeMin_I', "End Minute", roundToNearest15(endMin));
-        await enterDropdownText(page, '#EndTimeAMPM_I', "End AM/PM", endAMPM);
+        await enterDropdownText(page, '#EndTimeAMPM_I', "End AM/PM", endTime[0].qualifier);
     }
 
     const addTimeButton = await page.$('#MainContent_btnAddTime');
@@ -169,21 +172,22 @@ async function setWeather(page: Page) {
     await page.goto(`${BASE_CBC_URL}/Compiler/Weather.aspx`);
 
     // temp min/max
-    await enterInputText(page, "#txtWeatherTempMin", "Temperature Min", getResultValue("weather", "Temperature Min") );
-    await enterInputText(page, "#txtWeatherTempMax", "Temperature Max", getResultValue("weather", "Temperature Max"));
-    await enterInputText(page, "#cmbWeatherTempUnits_I", "Temperature Units", getResultValue("weather", "Temperature Units"));
+    await enterInputText(page, "#txtWeatherTempMin", "Temperature Min", getQualifiedResultValue("weather", "temperature", "min"));
+
+    await enterInputText(page, "#txtWeatherTempMax", "Temperature Max", getQualifiedResultValue("weather", "temperature", "max"));
+    await enterInputText(page, "#cmbWeatherTempUnits_I", "Temperature Units", getQualifiedResultValue("weather", "temperature", "unit"));
     // wind direction and min/maxvelocity
-    await enterDropdownText(page, "#cmbWeatherWindDirection_I", "Wind Direction", getResultValue("weather", "Wind Direction" ), ["unknown", "calm", "east", "north", "northeast", "northwest", "south", "southeast", "southwest", "west", "variable"]);
-    await enterInputText(page, "#txtWeatherWindMinVelocity", "Wind Velocity Min", getResultValue("weather", "Wind Velocity Min"));
-    await enterInputText(page, "#txtWeatherWindMaxVelocity", "Wind Velocity Max", getResultValue("weather", "Wind Velocity Max"));
-    await enterInputText(page, "#cmbWeatherWindVelocityUnits_I", "Wind Units", getResultValue("weather", "Wind Units"));
+    await enterDropdownText(page, "#cmbWeatherWindDirection_I", "Wind Direction", getQualifiedResultValue("weather", "wind", "direction"), ["unknown", "calm", "east", "north", "northeast", "northwest", "south", "southeast", "southwest", "west", "variable"]);
+    await enterInputText(page, "#txtWeatherWindMinVelocity", "Wind Velocity Min", getQualifiedResultValue("weather", "wind velocity", "min"));
+    await enterInputText(page, "#txtWeatherWindMaxVelocity", "Wind Velocity Max", getQualifiedResultValue("weather", "wind velocity", "max"));
+    await enterInputText(page, "#cmbWeatherWindVelocityUnits_I", "Wind Units", getQualifiedResultValue("weather", "wind velocity", "unit"));
     // snow depth min/max
-    await enterInputText(page, "#txtWeatherSnowDepthMin", "Snow Depth Min", getResultValue("weather", "Snow Depth Min"));
-    await enterInputText(page, "#txtWeatherSnowDepthMax", "Snow Depth Max", getResultValue("weather", "Snow Depth Max"));
-    await enterInputText(page, "#cmbWeatherSnowDepthUnits_I", "Snow Depth Units", getResultValue("weather", "Snow Depth Units"));
+    await enterInputText(page, "#txtWeatherSnowDepthMin", "Snow Depth Min", getQualifiedResultValue("weather", "snow depth", "min"));
+    await enterInputText(page, "#txtWeatherSnowDepthMax", "Snow Depth Max", getQualifiedResultValue("weather", "snow depth", "max"));
+    await enterInputText(page, "#cmbWeatherSnowDepthUnits_I", "Snow Depth Units", getQualifiedResultValue("weather", "snow depth", "unit"));
     // water conditions
-    await enterDropdownText(page, "#cmbWeatherStillWater_I", "Still Water", getResultValue("weather", "Still Water"), ["unknown", "frozen", "open", "partly frozen", "partly open"]);
-    await enterDropdownText(page, "#cmbWeatherMovingWater_I", "Moving Water", getResultValue("weather", "Moving Water"), ["unknown", "frozen", "open", "partly frozen", "partly open"]);
+    await enterDropdownText(page, "#cmbWeatherStillWater_I", "Still Water", getQualifiedResultValue("weather", "water body", "still"), ["unknown", "frozen", "open", "partly frozen", "partly open"]);
+    await enterDropdownText(page, "#cmbWeatherMovingWater_I", "Moving Water", getQualifiedResultValue("weather", "water body", "moving"), ["unknown", "frozen", "open", "partly frozen", "partly open"]);
     const saveWeatherButton = await page.$("#btnWeatherSave");
     if (saveWeatherButton) {
         await saveWeatherButton.click();
@@ -191,12 +195,12 @@ async function setWeather(page: Page) {
         console.log("Saved weather information");
     }
     // cloud cover
-    await enterDropdownText(page, "#cmbWeatherCloudCoverAM_I", "Cloud Cover AM", getResultValue("weather", "Cloud Cover AM"), ["unknown", "clear", "cloudy", "foggy", "local fog", "partly clear", "partly cloudy"]);
-    await enterDropdownText(page, "#cmbWeatherCloudCoverPM_I", "Cloud Cover AM", getResultValue("weather", "Cloud Cover AM"), ["unknown", "clear", "cloudy", "foggy", "local fog", "partly clear", "partly cloudy"]);
+    await enterDropdownText(page, "#cmbWeatherCloudCoverAM_I", "Cloud Cover AM", getQualifiedResultValue("weather", "cloud cover", "am"), ["unknown", "clear", "cloudy", "foggy", "local fog", "partly clear", "partly cloudy"]);
+    await enterDropdownText(page, "#cmbWeatherCloudCoverPM_I", "Cloud Cover AM", getQualifiedResultValue("weather", "cloud cover", "am"), ["unknown", "clear", "cloudy", "foggy", "local fog", "partly clear", "partly cloudy"]);
 
     // precip
-    async function clickPrecipCheckbox(selector: string, field: string) {
-        const precipValue = (getResultValue("weather", field) as string)?.toLowerCase();
+    async function clickPrecipCheckbox(selector: string, type: string, name: string, qualifier: string) {
+        const precipValue = (getQualifiedResultValue(type, name, qualifier) as string)?.toLowerCase();
         let checkboxSelector;
         switch (precipValue) {
             case "none":
@@ -217,10 +221,10 @@ async function setWeather(page: Page) {
         }
     }
 
-    await clickPrecipCheckbox("AMRain", "Am Rain");
-    await clickPrecipCheckbox("AMSnow", "Am Snow");
-    await clickPrecipCheckbox("PMRain", "Pm Rain");
-    await clickPrecipCheckbox("PMSnow", "Pm Snow");
+    await clickPrecipCheckbox("AMRain", "weather", "precip rain", "am");
+    await clickPrecipCheckbox("AMSnow", "weather", "precip snow", "am");
+    await clickPrecipCheckbox("PMRain", "weather", "precip rain", "pm");
+    await clickPrecipCheckbox("PMSnow", "weather", "precip snow", "pm");
     const savePrecipButton = await page.$("#btnAMPMConditionsSave");
     if (savePrecipButton) {
         await savePrecipButton.click();
@@ -232,67 +236,72 @@ async function setWeather(page: Page) {
 async function setEffort(page: Page) {
     await page.goto(`${BASE_CBC_URL}/Compiler/Effort.aspx`);
 
-    await enterInputText(page, "#txtTotalNumber", "Total Number of Field Counters", getResultValue("effort", "Total Number of Field Counters"));
-    await enterInputText(page, "#txtMaximumNumber", "Max Number of Parties", getResultValue("effort", "Max Number of Parties"));
-    await enterInputText(page, "#txtMinimumNumber", "Min Number of Parties", getResultValue("effort", "Min Number of Parties"));
-    await enterInputText(page, "#txtTotalNumberFeeders", "Total Number of Feeder Counters", getResultValue("effort", "Total Number of Feeder Counters"));
+    await enterInputText(page, "#txtTotalNumber", "Total Number of Field Observers", getQualifiedResultValue("effort", "counters", "field"));
+    await enterInputText(page, "#txtMaximumNumber", "Max Number of Parties", getQualifiedResultValue("effort", "parties", "max"));
+    await enterInputText(page, "#txtMinimumNumber", "Min Number of Parties", getQualifiedResultValue("effort", "parties", "min"));
+    await enterInputText(page, "#txtTotalNumberFeeders", "Total Number of Feeder Counters", getQualifiedResultValue("effort", "counters", "feeder"));
     // Not setting units for these because the website defaults to miles already
-    await enterInputText(page, "#txtTransportationHours_13", "Total Hours By Foot", getResultValue("effort", "Total Hours By Foot"));
-    await enterInputText(page, "#txtTransportationDistance_13", "Total Miles By Foot", getResultValue("effort", "Total Miles By Foot"));
+    // TODO use the units from the data if we want to support km (could do a conversion here)
+    await enterInputText(page, "#txtTransportationHours_13", "Total Hours By Foot", getQualifiedResultValue("effort", "hours", "foot"));
+    await enterInputText(page, "#txtTransportationDistance_13", "Total Miles By Foot", getQualifiedResultValue("effort", "distance", "foot"));
     // We don't differentiate vehicle types, so just put all vehicle data into "car"
-    await enterInputText(page, "#txtTransportationHours_14", "Total Hours By Vehicle", getResultValue("effort", "Total Hours By Vehicle"));
-    await enterInputText(page, "#txtTransportationDistance_14", "Total Miles By Vehicle", getResultValue("effort", "Total Miles By Vehicle"));
-    await enterInputText(page, "#txtTransportationHours_9", "Total Hours Cross Country Skiing", getResultValue("effort", "Total Hours Cross Country Skiing"));
-    await enterInputText(page, "#txtTransportationDistance_9", "Total Hours Cross Country Skiing", getResultValue("effort", "Total Miles Cross Country Skiing"));
+    await enterInputText(page, "#txtTransportationHours_14", "Total Hours By Vehicle", getQualifiedResultValue("effort", "hours", "vehicle"));
+    // Again, assuming miles here
+    await enterInputText(page, "#txtTransportationDistance_14", "Total Miles By Vehicle", getQualifiedResultValue("effort", "distance", "vehicle"));
+    await enterInputText(page, "#txtTransportationHours_9", "Total Hours Cross Country Skiing", getQualifiedResultValue("effort", "hours", "cross country ski"));
+    await enterInputText(page, "#txtTransportationDistance_9", "Total Hours Cross Country Skiing", getQualifiedResultValue("effort", "distance", "cross country ski"));
     // At the moment we don't have any other transportation types
-    await enterInputText(page, "#txtOtherFeedersHours", "Total Hours Feeder Watching", getResultValue("effort", "Total Hours Feeder Watching"));
+    await enterInputText(page, "#txtOtherFeedersHours", "Total Hours Feeder Watching", getQualifiedResultValue("effort", "hours", "feeder"));
     // Not supporting owling/noctural effort at the moment
 }
 
 async function enterChecklistCounts(page: Page) {
     await page.goto(`${BASE_CBC_URL}/Compiler/BirdChecklist.aspx`);
 
-    const speciesRows = getResultsByType("species");
+    const speciesRows = getResultsByTypeAndName("species", "count");
     let totalSpeciesCount = 0
-    for (const species of speciesRows) {
-        const commonName = species.name;
+    for (const speciesRow of speciesRows) {
+        const commonName = speciesRow.qualifier;
         if (!isExpectedMnCbcSpecies(commonName)) {
             continue;
         }
-        const count = species.val;
+        const count = speciesRow.value;
         console.log(`Entering count for ${commonName}: ${count}`);
-        await enterChecklistCount(page, commonName, count);
-        if(/cwp$/i.test(count)) {
+        await enterChecklistCount(page, speciesRow);
+        if (/cwp$/i.test(count)) {
             continue; //don't include "count week" entries in total species count
         }
-        if(isAouRealSpecies(commonName)) {
+        if (isAouRealSpecies(commonName)) {
             totalSpeciesCount++;
         }
     }
     await enterTotalSpeciesCount(page, totalSpeciesCount);
 }
 
-async function enterChecklistCount(page: Page, speciesCommonName: string, count: number | string) {
+async function enterChecklistCount(page: Page, speciesRow: CbcResultRow) {
     const addSpeciesButton = await page.$("#btnAddSpeciesRow");
     if (addSpeciesButton) {
         await addSpeciesButton.click();
     }
     const timeout = 10000;
     //thank goodness for Chrome dev tools recorder exporting puppeteer code! needed on this one.
-    await typeSpeciesName(page, speciesCommonName, timeout);
+    await typeSpeciesName(page, speciesRow.qualifier, timeout);
     const countSelector = "#gvBirdChecklist_tccell0_4 > input[type='text'].count";
     try {
         const countInput = await page.waitForSelector(countSelector, {timeout: 10000});
         if (!countInput) {
             return;
         }
-        await enterInputText(page, countSelector, speciesCommonName, `${count}`, 'xpath///*[@id="ajaxError" and contains(., "Saved")]');
+        await enterInputText(page, countSelector, speciesRow.qualifier, `${speciesRow.value}`, {
+            waitForSelector: 'xpath///*[@id="ajaxError" and contains(., "Saved")]',
+            pressEnter: false
+        });
     } catch (err) {
         // @ts-ignore
         if (err.message.inludes(`Error: Error: failed to find element matching selector ${countSelector}`)) {
             const notFound = await page.$eval("#gvBirdChecklist_DXMainTable", (el) => el.textContent.includes("No data to display"));
             if (notFound) {
-                console.log(`WARNING: Unable to find species ${speciesCommonName} on website checklist, check your CBC results and/or enter it manually.`);
+                console.log(`WARNING: Unable to find species ${speciesRow.value} on website checklist, check your CBC results and/or enter it manually.`);
             }
         }
     }
@@ -301,10 +310,10 @@ async function enterChecklistCount(page: Page, speciesCommonName: string, count:
 async function enterTotalSpeciesCount(page: Page, totalSpeciesCount: number) {
     await page.goto("https://netapp.audubon.org/CBC/Compiler/TotalSpecies.aspx");
 
-    console.log("Entering total species count");
-    const totalSpeciesInputSelector = "#TotalSpecies";
-    await enterInputText(page, totalSpeciesInputSelector, "Total Species Count", totalSpeciesCount);
-    await page.waitForSelector('xpath///*[@id="ajaxFiredTotalSpecies" and contains(., "Saved")]', {timeout: 5000});
+    console.log(`Entering total species count ${totalSpeciesCount}`);
+    console.log(`Entering input tetx for total species count: ${totalSpeciesCount}`);
+    await enterInputText(page, "#TotalSpecies", "Total Species Count", totalSpeciesCount, {waitForSelector:'xpath///*[@id="ajaxFiredTotalSpecies" and contains(., "Saved")]', pressEnter:false});
+    console.log("Saved total species count successfully");
 }
 
 async function typeSpeciesName(page: Page, speciesCommonName: string, timeout: number) {
@@ -352,11 +361,11 @@ async function isAuthenticated(page: Page) {
     initializeDatabase();
     await main();
     console.log(`Next steps that need to be done manually:`
-    + `\n 1. Review the README in this project`
-    + `\n 2. Review the entered data on the Audubon CBC website - you can pull your count summary report to see the numbers.`
-    + `\n 3. Check any generic "sp." entries to see if they need to be included in the total species count.`
-    + `\n 4. Flag any high/low/unusual species.`
-    + `\n 5. Enter any optional special aspects for this count.`
-    + `\n 6. After all required sections are complete, submit the count for review and final submission to CBC/NAS.`
+        + `\n 1. Review the README in this project`
+        + `\n 2. Review the entered data on the Audubon CBC website - you can pull your count summary report to see the numbers.`
+        + `\n 3. Check any generic "sp." entries to see if they need to be included in the total species count.`
+        + `\n 4. Flag any high/low/unusual species.`
+        + `\n 5. Enter any optional special aspects for this count.`
+        + `\n 6. After all required sections are complete, submit the count for review and final submission to CBC/NAS.`
     );
 })();

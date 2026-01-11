@@ -1,14 +1,26 @@
 import {Page} from "puppeteer";
 import {db} from "./database";
+import { encode as xpathEncode} from 'html-entities';
 
-export type CbcResultRow = { type: string, name: string, val: string };
+export type CbcResultRow = { type: string, name: string, qualifier: string, value: string };
 
+// Get all results of a given type, such as species
 export function getResultsByType(type: string): CbcResultRow[] {
-    return db.prepare('SELECT result_name as name, result_value as val FROM cbc_results WHERE result_type = ?').all(type.toLowerCase()) as CbcResultRow[];
+    return db.prepare('SELECT result_type as type, result_name as name, result_qualifier as qualifier, result_value as val FROM cbc_results WHERE result_type = ?').all(type.toLowerCase()) as CbcResultRow[];
 }
 
-export function getResultValue(type: string, name: string): string | number | null {
-    const result = db.prepare('SELECT result_value as val FROM cbc_results WHERE result_type = ? AND result_name = ?').get(type.toLowerCase(), name.toLowerCase()) as {
+export function getResultsByTypeAndName(type: string, name: string): CbcResultRow[] {
+    return db.prepare('SELECT result_type as type, result_name as name, result_qualifier as qualifier, result_value as value FROM cbc_results WHERE result_type = ? and result_name = ?').all(type.toLowerCase(), name.toLowerCase()) as CbcResultRow[];
+}
+
+// For example, all of the weather precip results
+export function getResultsByTypeAndNamePrefix(type: string, name: string): CbcResultRow[] {
+    return db.prepare('SELECT result_type as type, result_name as name, result_qualifier as qualifier, result_value as value FROM cbc_results WHERE result_type = ? and result_name LIKE ?').all(type.toLowerCase(), `${name.toLowerCase()}%`) as CbcResultRow[];
+}
+
+// Get a single result value by name, type and qualifier.
+export function getQualifiedResultValue(type: string, name: string, qualifier: string): string | number | null {
+    const result = db.prepare('SELECT result_value as val FROM cbc_results WHERE result_type = ? AND result_name = ? and result_qualifier = ?').get(type.toLowerCase(), name.toLowerCase(), qualifier.toLowerCase()) as {
         val: string | number
     } | null;
     return result ? result.val : null;
@@ -81,7 +93,17 @@ export async function enterDropdownText(page: Page, htmlInputSelector: string, f
     }
 }
 
-export async function enterInputText(page: Page, htmlInputSelector: string, field: string, value: string | number | null, waitForSelector?: string) {
+export type EnterInputOptions = {
+    pressEnter?: boolean,
+    waitForSelector?: string
+}
+
+const defaultEnterInputOptions: EnterInputOptions = {
+    pressEnter: true,
+    waitForSelector: undefined
+}
+
+export async function enterInputText(page: Page, htmlInputSelector: string, field: string, value: string | number | null, opts: EnterInputOptions = {}) {
     if (!value) {
         console.warn(`No value provided for ${field}`);
         return;
@@ -93,13 +115,42 @@ export async function enterInputText(page: Page, htmlInputSelector: string, fiel
     if (await skipExistingInput(page, htmlInputSelector, field, value)) {
         return;
     }
+    const inputOptions = {...defaultEnterInputOptions, ...opts};
     const inputValue = typeof value === 'number' ? value.toString() : value;
-    await page.click(htmlInputSelector, {count: 2, delay: 100});
-    await page.keyboard.type(inputValue, {delay: 100});
-    await page.keyboard.press('Enter');
-    if (waitForSelector) {
-        await page.waitForSelector(waitForSelector, {timeout: 5000});
+    await page.click(htmlInputSelector, {count: 2, delay: 200});
+    await page.keyboard.type(inputValue, {delay: 200});
+    if (inputOptions.pressEnter) {
+        await page.keyboard.press('Enter');
     }
+    if (inputOptions.waitForSelector) {
+        await page.waitForSelector(inputOptions.waitForSelector, {timeout: 5000});
+    }
+}
+
+export async function selectOptionWithText(page: Page, optionText: string | null, xpathSelect: string = "") {
+    if (!optionText) {
+        throw new Error("No option text provided");
+    }
+    //case-insensitive hack for xpath 1.0
+    const optionSelect = await page.$(`xpath///${xpathSelect ? xpathSelect : "select"}/option[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = '${xpathEncode(optionText.toLowerCase())}']`);
+    if (!optionSelect) {
+        throw new Error(`Option with text ${optionText} not found`);
+    }
+    const optionValue = await optionSelect.getProperty("value");
+    return page.select(`xpath///${xpathSelect}`, (await optionValue.jsonValue()) as string);
+}
+
+export async function findTableRowWithText(page: Page, rowText: string | null, xpathSelect: string = "") {
+    if (!rowText) {
+        throw new Error("No cell text provided");
+    }
+    //case-insensitive hack for xpath 1.0
+    const tableRow = await page.$(`xpath///${xpathSelect ? xpathSelect : "table"}//tr[td[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = '${xpathEncode(rowText.toLowerCase())}']]`);
+    if (!tableRow) {
+       console.warn(`Row with text ${rowText} not found - check your data. You may need to correct and reload the database, or enter the data manually.`);
+       return null;
+    }
+    return tableRow;
 }
 
 export function isNumeric(value: string | null): boolean {

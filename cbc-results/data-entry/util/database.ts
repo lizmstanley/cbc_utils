@@ -18,7 +18,8 @@ const FORCE_DATA_LOAD = process.env.FORCE_DATA_LOAD === 'true';
 
 export const db = new Database('cbc_database.db');
 
-export function initializeDatabase() {
+export function initializeDatabase(forceDataReload: boolean = FORCE_DATA_LOAD !== undefined ? FORCE_DATA_LOAD : false) {
+    console.log('Initializing database...');
     db.exec(`CREATE TABLE IF NOT EXISTS data_load_status
              (
                  id
@@ -32,19 +33,20 @@ export function initializeDatabase() {
                  loaded_at
                      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
              )`);
+    db.exec('CREATE UNIQUE INDEX if NOT EXISTS idx_data_load_status ON data_load_status(data_set)');
     const cbcResultsLoaded = isDataLoaded('cbc_results');
     const mnCbcSpeciesLoaded = isDataLoaded('mn_cbc_species');
     const aouRealSpeciesLoaded = isDataLoaded('aou_real_species');
-    if (cbcResultsLoaded && mnCbcSpeciesLoaded && aouRealSpeciesLoaded && !FORCE_DATA_LOAD) {
+    if (cbcResultsLoaded && mnCbcSpeciesLoaded && aouRealSpeciesLoaded && !forceDataReload) {
         console.log('All data sets already loaded, skipping data load. Set FORCE_DATA_LOAD=true to reload.');
         return;
     }
     else {
-        if(FORCE_DATA_LOAD) {
-            console.log('FORCE_DATA_LOAD is set to true, reloading all data sets...');
+        if(forceDataReload) {
+            console.log('Force reloading all data sets...');
         }
     }
-    if (!cbcResultsLoaded || FORCE_DATA_LOAD) {
+    if (forceDataReload || !cbcResultsLoaded) {
         console.log('Loading CBC Results data...');
         db.exec('DROP TABLE IF EXISTS cbc_results');
         db.exec(`CREATE TABLE IF NOT EXISTS cbc_results
@@ -57,25 +59,28 @@ export function initializeDatabase() {
                          TEXT,
                      result_name
                          TEXT,
+                     result_qualifier
+                         TEXT,
                      result_value
                          TEXT
                  )`);
-        db.exec('CREATE INDEX if NOT EXISTS idx_cbc_results ON cbc_results(result_type)');
-        db.exec('CREATE UNIQUE INDEX if NOT EXISTS idx_ ON cbc_results(result_name)');
+        db.exec('CREATE UNIQUE INDEX if NOT EXISTS idx_cbc_results ON cbc_results(result_type, result_name, result_qualifier)');
         fs.createReadStream(CSV_RESULTS_FILE)
             .pipe(csv({
-                headers: ['type', 'name', 'val'],
-                mapValues: ({value}) => value.trim().toLowerCase()
+                // headers in csv are: type,name,qualifier,value
+                // TODO: validate expected headers exist
+                mapValues: ({value}) => value.trim().toLowerCase(),
+                mapHeaders: ({header}) => header.trim().toLowerCase(),
             }))
             .on('data', (row: CbcResultRow) => {
-                db.prepare('INSERT INTO cbc_results ( result_type, result_name, result_value) VALUES (?, ?, ?)').run(row.type, row.name, row.val)
+                db.prepare('INSERT INTO cbc_results ( result_type, result_name, result_qualifier, result_value) VALUES (?, ?, ?, ?)').run(row.type, row.name, row.qualifier, row.value)
             })
             .on('end', () => {
                 console.log(`${CSV_RESULTS_FILE} successfully processed`);
             });
-        db.prepare('INSERT INTO data_load_status (data_set, is_loaded, loaded_at) VALUES (?,?,CURRENT_TIMESTAMP)').run('cbc_results', 1);
+        db.prepare('INSERT INTO data_load_status (data_set, is_loaded, loaded_at) VALUES (?,?,CURRENT_TIMESTAMP) ON CONFLICT (data_set) DO UPDATE SET is_loaded=1, loaded_at=CURRENT_TIMESTAMP').run('cbc_results', 1);
     }
-    if (!mnCbcSpeciesLoaded || FORCE_DATA_LOAD) {
+    if (forceDataReload || !mnCbcSpeciesLoaded) {
         console.log('Loading MN CBC Species data...');
         db.exec(`DROP TABLE IF EXISTS mn_cbc_species`);
         db.exec(`CREATE TABLE IF NOT EXISTS mn_cbc_species
@@ -101,9 +106,9 @@ export function initializeDatabase() {
             .on('end', () => {
                 console.log(`${MN_CBC_SPECIES_LIST} successfully processed`);
             });
-        db.prepare('INSERT INTO data_load_status (data_set, is_loaded, loaded_at) VALUES (?,?,CURRENT_TIMESTAMP)').run('mn_cbc_species', 1);
+        db.prepare('INSERT INTO data_load_status (data_set, is_loaded, loaded_at) VALUES (?,?,CURRENT_TIMESTAMP) ON CONFLICT (data_set) DO UPDATE SET is_loaded=1, loaded_at=CURRENT_TIMESTAMP').run('mn_cbc_species', 1);
     }
-    if (!aouRealSpeciesLoaded || FORCE_DATA_LOAD) {
+    if (forceDataReload || !aouRealSpeciesLoaded) {
         console.log('Loading AOU Real Species data...');
         db.exec(`DROP TABLE IF EXISTS aou_real_species`);
         db.exec(`CREATE TABLE IF NOT EXISTS aou_real_species
@@ -128,7 +133,7 @@ export function initializeDatabase() {
             .on('end', () => {
                 console.log(`${AOU_REAL_SPECIES_LIST} successfully processed`);
             });
-        db.prepare('INSERT INTO data_load_status (data_set, is_loaded, loaded_at) VALUES (?,?,CURRENT_TIMESTAMP)').run('aou_real_species', 1);
+        db.prepare('INSERT INTO data_load_status (data_set, is_loaded, loaded_at) VALUES (?,?,CURRENT_TIMESTAMP) ON CONFLICT (data_set) DO UPDATE SET is_loaded=1, loaded_at=CURRENT_TIMESTAMP').run('aou_real_species', 1);
     }
 }
 
@@ -138,3 +143,4 @@ function isDataLoaded(dataSet: string): boolean {
     } | undefined;
     return row ? !!row.is_loaded : false;
 }
+

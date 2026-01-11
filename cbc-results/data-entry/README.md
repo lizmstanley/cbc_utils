@@ -59,31 +59,39 @@ The CSV files used to load data into the database are in the `data-entry/csv-dat
 * `data-entry/csv-data-files/mn-cbc-species.csv` - list of MN CBC species (from MOU), included in this project. 
 * `data-entry/csv-data-files/nacc-species.csv` - list of NACC (AOU "real") species, included in this project. 
 * `data-entry/csv-data-files/cbc-results.csv` - the CBC data for your count circle.
-  * The file needs to be aved in `data-entry/csv-data-files`
+  * The file needs to be saved in `data-entry/csv-data-files`
   * The default file name is `cbc-results.csv`, but you can change that by setting the RESULTS_CSV_FILE environment variable in the `data-entry/.env` file.
 
 To force reload of all existing data from the CSV files into the database, set FORCE_DATA_LOAD=true to in the `data-entry/.env` file.
-This will truncate all tables and reload from the CSV files on the next run. Set back to false after that.
+This will drop all tables and reload from the CSV files on the next run. Set back to false after that.
+Alternatively, you can run `npm run load-db` to reload the data before running the data entry scripts, which will force a reload.
 
 The cbc-results.csv can be generated from a spreadsheet or other tool. It must be structured as described below.
-There are 3 comma separated entries on each line. Do not add a header row. Each line is of the form:
-result_type, result_name, result_value. For example:
+There are 4 comma separated entries on each line.  Each line is of the form:
+result_type, result_name,result_qualifier,result_value. For example:
+
 ```
-Time,Start,08:00
-Time,End,17:00
-Weather,Temperature Min,10
-Weather,Temperature Max,20
-Effort,Min Number of Parties,33
-Effort,Total Hours By Vehicle,71.28
-Species,Wild Turkey,64
-Species,Bald Eagle,165
-Species,Red-tailed Hawk,30
-Species,Red-bellied Woodpecker,77
-Species,Snowy Owl,1
-Species,Gadwall,cw
+Type,Name,Qualifier,Value
+Time,Start,AM,08:00
+Time,End,PM,5:00
+Weather,Temperature,Min,10
+Weather,Temperature,Max,20
+Weather,Temperature,Unit,Fahrenheit
+Effort,Counters,Field,63
+Effort,Counters,Feeder,4
+Effort,Parties,Min,33
+Effort,Parties,Max,33
+Effort,Hours,Vehicle,71.28
+Effort,Hours,Foot,67.398
+Species,Count,Wild Turkey,64
+Species,Count,Bald Eagle,165
+Species,Count,Red-tailed Hawk,30
+Species,Count,Red-bellied Woodpecker,77
+Species,Count,Downy Woodpecker,126
+Species,Count,Gadwall,cw
 ```
 
-Note that the start and end times must be in 24-hour format. There is a full example (data I actually used from my count circle
+There is a full example (data I actually used from my count circle
 at `csv-data-files/cbc-results-example.csv`.) Decimal numbers will be rounded.
 
 ## NAS Data Entry
@@ -128,6 +136,20 @@ waste time on this section. I manage my participants list separately anyway.
 * Add any other effort data not supported by the automation script
 * Change distance units if not in miles
 * Final data submission
+
+## MOU Data Entry
+
+### Automated steps
+* Login to MOU CBC website
+* Navigate to your CBC circle's data entry page
+* Set weather data
+  * This differs from the NAS website. MOU has different fields and not all are supported yet
+* Set effort data
+* Enter species counts
+  * If there is a problem with a species name, review your CSV file and ensure it is found in the [list of MN CBC species](csv-data-files/mn-cbc-species.csv), which is loaded into the database cross-referenced during data entry
+ * Logout of the MOU CBC website
+
+It does not submit the final data, so you can review it before submission. This step must be done manually.
 
 
 ## References
