@@ -35,7 +35,7 @@ experience will likely have an easier time getting this set up as it exists toda
 
 1. Clone this project
 2. Install NVM (Node Version Manager), see https://github.com/nvm-sh/nvm
-   3. Some easier instructions (for Linux/Mac/Windows) here: https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/
+   1Some easier instructions (for Linux/Mac/Windows) here: https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/
 3. At a terminal in this (`cbc-results/data-entry`) directory, execute `nvm install $(cat .nvmrc)` to install the correct Node version
 4. `nvm use` to switch to that Node version
 5. Run `npm install` to install the project dependencies
@@ -52,6 +52,7 @@ experience will likely have an easier time getting this set up as it exists toda
 9. `npm run start-aububon` to run the Audubon CBC data entry script
 10. `npm run start-mou` to run the MOU CBC data entry script
 11. At any time, if needed, you can run `npm run load-db` to reload the database from the CSV files
+    1.  You can actually run both data entry scripts at the same time, if the data has already been loaded, since the database is not locked when reading.
 
 ## Puppeteer
 This project uses Puppeteer to automate web browser actions. This application defaults to showing the browser, so you can watch

@@ -1,0 +1,84 @@
+Type,Name,Qualifier,Value
+Time,Start,AM,08:00
+Time,End,PM,5:00
+Weather,Temperature,Min,10
+Weather,Temperature,Max,20
+Weather,Temperature,Unit,Fahrenheit
+Weather,Wind ,Direction,Northwest
+Weather,Wind Velocity,Unit,Miles/hour
+Weather,Wind Velocity,Max ,52
+Weather,Wind Velocity,Min,21
+Weather,Snow Depth,Unit,Inches
+Weather,Snow Depth,Min,5
+Weather,Snow Depth,Max,5
+Weather,Water Body,Still,Frozen
+Weather,Water Body,Moving,Partly Frozen
+Weather,Cloud Cover,AM,Clear
+Weather,Cloud Cover,PM,Clear
+Weather,Precip Rain,AM,None
+Weather,Precip Rain,PM,None
+Weather,Precip Snow,AM,None
+Weather,Precip Snow,PM,None
+Effort,Counters,Field,63
+Effort,Counters,Feeder,4
+Effort,Parties,Min,33
+Effort,Parties,Max ,33
+Effort,Hours,Vehicle,71.28
+Effort,Hours,Foot,67.39
+Effort,Hours,Cross Country Ski,2
+Effort,Hours,Feeder,18
+Effort,Distance,Unit,Miles
+Effort,Distance,Vehicle,491.72
+Effort,Distance,Foot,77.72
+Effort,Distance,Cross Country Ski,2.5
+Species,Count,Wild Turkey,64
+Species,Count,Bald Eagle,165
+Species,Count,Red-tailed Hawk,30
+Species,Count,Red-bellied Woodpecker,77
+Species,Count,Downy Woodpecker,126
+Species,Count,Hairy Woodpecker,72
+Species,Count,Northern Flicker,25
+Species,Count,Pileated Woodpecker,10
+Species,Count,Blue Jay,116
+Species,Count,American Crow,464
+Species,Count,Black-capped Chickadee,301
+Species,Count,Red-breasted Nuthatch,24
+Species,Count,White-breasted Nuthatch,107
+Species,Count,Brown Creeper,31
+Species,Count,American Goldfinch,168
+Species,Count,Dark-eyed Junco,285
+Species,Count,Northern Cardinal,101
+Species,Count,Mallard,1872
+Species,Count,American Robin,1318
+Species,Count,European Starling,214
+Species,Count,House Finch,98
+Species,Count,Pine Siskin,3
+Species,Count,American Tree Sparrow,64
+Species,Count,Trumpeter Swan,74
+Species,Count,Common Goldeneye,14
+Species,Count,Cooper's Hawk,3
+Species,Count,Belted Kingfisher,5
+Species,Count,Hermit Thrush,3
+Species,Count,White-throated Sparrow,6
+Species,Count,Canada Goose,490
+Species,Count,Rock Pigeon,381
+Species,Count,House Sparrow,528
+Species,Count,Ring-necked Duck,2
+Species,Count,Common Merganser,44
+Species,Count,Mourning Dove,9
+Species,Count,Eastern Bluebird,12
+Species,Count,Hooded Merganser,15
+Species,Count,Northern Shrike,2
+Species,Count,Red-tailed Hawk (Harlan's),1
+Species,Count,Barred Owl,1
+Species,Count,Tufted Titmouse,1
+Species,Count,Red-headed Woodpecker,1
+Species,Count,Sharp-shinned Hawk,2
+Species,Count,Rough-legged Hawk,2
+Species,Count,Cedar Waxwing,44
+Species,Count,Merlin,1
+Species,Count,Wood Duck,1
+Species,Count,American Kestrel,1
+Species,Count,Pied-billed Grebe,1
+Species,Count,Snowy Owl,1
+Species,Count,Gadwall,cw

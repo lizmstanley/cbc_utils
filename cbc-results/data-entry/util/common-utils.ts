@@ -1,6 +1,5 @@
 import {Page} from "puppeteer";
 import {db} from "./database-ddl";
-import { encode as xpathEncode} from 'html-entities';
 
 export type CbcResultRow = { type: string, name: string, qualifier: string, value: string };
 
@@ -103,14 +102,30 @@ const defaultEnterInputOptions: EnterInputOptions = {
     waitForSelector: undefined
 }
 
+
+export function isNumericValue(value: string | number): boolean {
+    return isFinite(Number(value));
+}
+
+export function isDecimalValue(value: string | number): value is number {
+    return isNumericValue(value) && !Number.isInteger(value);
+}
+
+export function roundDecimalInput(value: number): number {
+    if (isDecimalValue(value)) {
+        // Steve doesn't want decimals
+        return Math.round(value);
+    }
+    return value;
+}
+
 export async function enterInputText(page: Page, htmlInputSelector: string, field: string, value: string | number | null, opts: EnterInputOptions = {}) {
     if (!value) {
         console.warn(`No value provided for ${field}`);
         return;
     }
-    if (isFinite(Number(value)) && !Number.isInteger(value)) {
-        // Steve doesn't want decimals
-        value = Math.round(value as number);
+    if (isDecimalValue(value)) {
+        value = roundDecimalInput(value as number);
     }
     if (await skipExistingInput(page, htmlInputSelector, field, value)) {
         return;
@@ -132,7 +147,7 @@ export async function selectOptionWithText(page: Page, optionText: string | null
         throw new Error("No option text provided");
     }
     //case-insensitive hack for xpath 1.0
-    const optionSelect = await page.$(`xpath///${xpathSelect ? xpathSelect : "select"}/option[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = '${xpathEncode(optionText.toLowerCase())}']`);
+    const optionSelect = await page.$(`xpath///${xpathSelect ? xpathSelect : "select"}/option[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = "${optionText.toLowerCase()}"]`);
     if (!optionSelect) {
         throw new Error(`Option with text ${optionText} not found`);
     }
@@ -144,11 +159,12 @@ export async function findTableRowWithText(page: Page, rowText: string | null, x
     if (!rowText) {
         throw new Error("No cell text provided");
     }
-    //case-insensitive hack for xpath 1.0
-    const tableRow = await page.$(`xpath///${xpathSelect ? xpathSelect : "table"}//tr[td[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = '${xpathEncode(rowText.toLowerCase())}']]`);
+    // case-insensitive hack for xpath 1.0
+    // must use double quotes around the search text due to the possibility of single quotes in the text
+    const tableRow = await page.$(`xpath///${xpathSelect ? xpathSelect : "table"}//tr[td[translate(text(), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz') = "${rowText.toLowerCase()}"]]`);
     if (!tableRow) {
-       console.warn(`Row with text ${rowText} not found - check your data. You may need to correct and reload the database, or enter the data manually.`);
-       return null;
+        console.warn(`Row with text ${rowText} not found - check your data. You may need to correct and reload the database, or enter the data manually.`);
+        return null;
     }
     return tableRow;
 }

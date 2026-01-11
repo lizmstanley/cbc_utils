@@ -12,9 +12,9 @@ import {
     getQualifiedResultValue,
     getResultsByTypeAndName,
     isExpectedMnCbcSpecies,
+    roundDecimalInput,
     selectOptionWithText,
 } from "../util/common-utils";
-import {encode as xpathEncode} from 'html-entities';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -45,12 +45,16 @@ async function main() {
     try {
         await login(page);
         await page.goto(COMPILER_PAGE_URL);
-        await clickWeatherEffortLink(page);
-        await setEffort(page);
-        await setWeather(page);
+        const canEnterWeatherEffort = await clickWeatherEffortLink(page);
+        if (canEnterWeatherEffort) {
+            await setEffort(page);
+            await setWeather(page);
+        }
         await page.goto(COMPILER_PAGE_URL);
-        await clickEditDataLink(page);
-        await enterChecklistCounts(page);
+        const canEnterSpeciesData = await clickEditDataLink(page);
+        if (canEnterSpeciesData) {
+            await enterChecklistCounts(page);
+        }
         await page.goto(COMPILER_PAGE_URL);
         await logout(page);
     } catch (error) {
@@ -84,7 +88,7 @@ async function login(page: Page) {
     }
 
     console.log('Checking for login confirmation page');
-    const compilersLoginPageMessage = await page.waitForSelector(`xpath///html/body/table/tbody/tr[3]/td[2]/h3/font[contains(text(), "${xpathEncode(COMPILER_FIRST_NAME)} ${xpathEncode(COMPILER_LAST_NAME)}'s Compiler Page")]`, {timeout: 5000});
+    const compilersLoginPageMessage = await page.waitForSelector(`xpath///html/body/table/tbody/tr[3]/td[2]/h3/font[contains(text(), "${COMPILER_FIRST_NAME} ${COMPILER_LAST_NAME}'s Compiler Page")]`, {timeout: 5000});
 
     if (!compilersLoginPageMessage) {
         throw new Error('Login confirmation not found, login may have failed');
@@ -99,7 +103,10 @@ async function clickWeatherEffortLink(page: Page) {
         console.log(`Clicking Weather and Effort link`);
         await editWeatherEffortLink.click();
         await page.waitForNavigation();
+        return true;
     }
+    console.warn(`Weather and Effort link not found, it may have already been submitted`);
+    return false;
 }
 
 async function setEffort(page: Page) {
@@ -109,7 +116,7 @@ async function setEffort(page: Page) {
     const totalHoursByFoot = getQualifiedResultValue("effort", "hours", "foot");
     const totalHoursByVehicle = getQualifiedResultValue("effort", "hours", "vehicle");
     const totalHoursCrossCountrySkiing = getQualifiedResultValue("effort", "hours", "cross country ski");
-    const totalEffortHours = Number(feederWatchingHours) + Number(totalHoursByFoot) + Number(totalHoursByVehicle) + Number(totalHoursCrossCountrySkiing);
+    const totalEffortHours = roundDecimalInput(feederWatchingHours as number) + roundDecimalInput(totalHoursByFoot as number) + roundDecimalInput(totalHoursByVehicle as number) + roundDecimalInput(totalHoursCrossCountrySkiing as number);
 
     // MOU is all imperial units. The database supports metric so a future improvement could be to convert if needed.
     const totalMilesByFoot = getQualifiedResultValue("effort", "distance", "foot");
@@ -314,11 +321,14 @@ async function clickEditDataLink(page: Page) {
     // The link won't exist if data has already been submitted
     if (editDataLink) {
         await editDataLink.click();
-        const countYearText = await page.waitForSelector(`xpath///html/body/table/tbody/tr[3]/td/h2[contains(text(), ${xpathEncode(COUNT_YEAR)})]`, {timeout: 5000});
+        const countYearText = await page.waitForSelector(`xpath///html/body/table/tbody/tr[3]/td/h2[contains(text(), ${COUNT_YEAR})]`, {timeout: 5000});
         if (!countYearText) {
             throw new Error(`Count year ${COUNT_YEAR} not found on checklist page`);
         }
+        return true;
     }
+    console.warn(`Edit Data link not found, data may have already been submitted`);
+    return false;
 }
 
 async function enterChecklistCounts(page: Page) {

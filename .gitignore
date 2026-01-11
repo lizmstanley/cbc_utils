@@ -1,4 +1,7 @@
 *.csv
+!cbc-results-example.csv
+!mn-cb-species.csv
+!NACC_list_species.csv
 mapping-utils/.env
 .cbc-env/
 .idea/

@@ -297,11 +297,14 @@ async function enterChecklistCount(page: Page, speciesRow: CbcResultRow) {
         });
     } catch (err) {
         // @ts-ignore
-        if (err.message.inludes(`Error: Error: failed to find element matching selector ${countSelector}`)) {
+        if (err.message && err.message.includes(`Error: Error: failed to find element matching selector ${countSelector}`)) {
             const notFound = await page.$eval("#gvBirdChecklist_DXMainTable", (el) => el.textContent.includes("No data to display"));
             if (notFound) {
                 console.log(`WARNING: Unable to find species ${speciesRow.value} on website checklist, check your CBC results and/or enter it manually.`);
             }
+        }
+        else {
+            console.error(`Unexpected error entering count for species ${speciesRow.qualifier}:`, err);
         }
     }
 }
