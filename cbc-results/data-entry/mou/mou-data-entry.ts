@@ -4,7 +4,7 @@ import * as dotenv from 'dotenv';
 import * as path from 'path';
 import {dirname} from 'path';
 import {fileURLToPath} from "url";
-import {initializeDatabase} from "../util/database";
+import {initializeDatabase} from "../util/database-ddl";
 import {
     CbcResultRow,
     enterInputText,
@@ -18,14 +18,14 @@ import {encode as xpathEncode} from 'html-entities';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-dotenv.config({path: path.join(__dirname, '.mou.env')});
+dotenv.config({path: [path.join(__dirname, '.mou.env'), path.join(__dirname, '..', '.env')]});
 
 const COMPILER_FIRST_NAME = process.env.COMPILER_FIRST_NAME;
 const COMPILER_LAST_NAME = process.env.COMPILER_LAST_NAME;
 const LOGIN_NAME = `${COMPILER_LAST_NAME}, ${COMPILER_FIRST_NAME}`;
 const PASSWORD = process.env.PASSWORD;
 const COUNT_YEAR = process.env.COUNT_YEAR;
-const SHOW_BROWSER = !!process.env.SHOW_BROWSER;
+const SHOW_BROWSER = process.env.SHOW_BROWSER === undefined || !(process.env.SHOW_BROWSER.trim()) || !!process.env.SHOW_BROWSER;
 const BASE_CBC_URL = 'https://moumn.org/CBC/';
 const LOGIN_URL = `${BASE_CBC_URL}/compilers_login.php`;
 const COMPILER_PAGE_URL = `${BASE_CBC_URL}/compilers_control.php`;
@@ -409,7 +409,7 @@ async function isAuthenticated(page: Page) {
     }
     initializeDatabase();
     await main();
-     console.log(`Next steps that need to be done manually:`
+    console.log(`Next steps that need to be done manually:`
         + `\n 1. Review the README in this project`
         + `\n 2. Review the entered data on the MOU CBC website.`
         + `\n 3. Enter any additional species comments/documentation as needed.`

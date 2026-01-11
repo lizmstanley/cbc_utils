@@ -12,8 +12,7 @@
   "scripts": {
     "build": "npm run clean && tsc",
     "clean": "rimraf ./dist",
-    "init-db": "tsx util/init.ts",
-    "load-db": "tsx util/load-db.ts -- --force",
+    "load-db": "tsx util/load-db.ts --force",
     "start-audubon": "tsx audubon/audubon-data-entry.ts",
     "start-mou": "tsx mou/mou-data-entry.ts",
     "format": "prettier . --write",

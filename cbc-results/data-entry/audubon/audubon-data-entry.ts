@@ -14,19 +14,18 @@ import {
     isExpectedMnCbcSpecies,
 } from "../util/common-utils";
 import {fileURLToPath} from "url";
-import {initializeDatabase} from "../util/database";
+import {initializeDatabase} from "../util/database-ddl";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-dotenv.config({path: path.join(__dirname, '.audubon.env')});
-dotenv.config({path: path.join(__dirname, '..', '.env')});
+dotenv.config({path: [path.join(__dirname, '.audubon.env'), path.join(__dirname, '..', '.env')]});
 
 const EMAIL = process.env.EMAIL;
 const PASSWORD = process.env.PASSWORD;
 const CIRCLE_NAME = process.env.CIRCLE_NAME;
 
-const SHOW_BROWSER = process.env.SHOW_BROWSER === undefined || !!process.env.SHOW_BROWSER;
+const SHOW_BROWSER = process.env.SHOW_BROWSER === undefined || !(process.env.SHOW_BROWSER.trim()) || !!process.env.SHOW_BROWSER;
 // This url works for login without having to wait at all!
 const LOGIN_URL = 'https://netapp.audubon.org/aap/application/cbc';
 // Once we're in, use this base URL for navigation

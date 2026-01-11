@@ -40,11 +40,18 @@ experience will likely have an easier time getting this set up as it exists toda
 4. `nvm use` to switch to that Node version
 5. Run `npm install` to install the project dependencies
 6. Copy the sample general .env file: `cp data-entry/sample.env .env`
-7. Edit the `.env` file to update any general environment variables you want to set
-6. Copy the sample audubon.env file: `cp data-entry/sample.audbon.env .audubon.env` 
-7. Edit the `.audubon.env` file to add your Audubon CBC credentials and the name of your CBC circle (the one you select from the menu on the compiler page.)
+7. Edit the `.env` file to update any general environment variables you want to set, if you want to change from the defaults.
+   For example, you can change the name of the CSV file that contains your CBC results data
+8. For Audubon CBC data entry:
+   1. In the `data-entry/audubon` directory, copy the sample .env file: `cp sample.audubon.env .audubon.env`
+   1. Edit `.audubon.env` file to add your Audubon CBC credentials and the name of your CBC circle (the one you select from the menu on the compiler page.)
+9. For MOU CBC data entry:
+   1. In the `data-entry/mou` directory, copy the sample .env file: `cp sample.mou.env .mou.env`
+   1. Edit `.mou.env` add your MOU CBC credentials and the count year.
 8. `npm run build` to compile the Typescript code
 9. `npm run start-aububon` to run the Audubon CBC data entry script
+10. `npm run start-mou` to run the MOU CBC data entry script
+11. At any time, if needed, you can run `npm run load-db` to reload the database from the CSV files
 
 ## Puppeteer
 This project uses Puppeteer to automate web browser actions. This application defaults to showing the browser, so you can watch
@@ -60,11 +67,19 @@ The CSV files used to load data into the database are in the `data-entry/csv-dat
 * `data-entry/csv-data-files/nacc-species.csv` - list of NACC (AOU "real") species, included in this project. 
 * `data-entry/csv-data-files/cbc-results.csv` - the CBC data for your count circle.
   * The file needs to be saved in `data-entry/csv-data-files`
-  * The default file name is `cbc-results.csv`, but you can change that by setting the RESULTS_CSV_FILE environment variable in the `data-entry/.env` file.
+  * The default file name is `cbc-results.csv`, but you can change that by setting the `RESULTS_CSV_FILE` environment variable in the `data-entry/.env` file.
 
+The tables in the database are:
+* `mn_cbc_species` - list of MN CBC species (csv already included in this project)
+* `aou_real_species` - list of NACC (AOU "real") species (csv already included in this project)
+* `cbc_results` - the CBC data for your count circle (this is the only file you need to provide)
+* `data_load_status` - tracks when the data was last loaded 
+
+The data will be loaded automatically when you run either of the data entry scripts (Audubon or MOU).
 To force reload of all existing data from the CSV files into the database, set FORCE_DATA_LOAD=true to in the `data-entry/.env` file.
 This will drop all tables and reload from the CSV files on the next run. Set back to false after that.
-Alternatively, you can run `npm run load-db` to reload the data before running the data entry scripts, which will force a reload.
+Alternatively, you can run `npm run load-db` to reload the data at any time, which will force a reload. For example, if you make some corrections to your result csv file,
+you would want to reload the database before running the data entry scripts again.
 
 The cbc-results.csv can be generated from a spreadsheet or other tool. It must be structured as described below.
 There are 4 comma separated entries on each line.  Each line is of the form:
@@ -149,7 +164,18 @@ waste time on this section. I manage my participants list separately anyway.
   * If there is a problem with a species name, review your CSV file and ensure it is found in the [list of MN CBC species](csv-data-files/mn-cbc-species.csv), which is loaded into the database cross-referenced during data entry
  * Logout of the MOU CBC website
 
-It does not submit the final data, so you can review it before submission. This step must be done manually.
+### Steps that must be done manually
+* Does not enter additional comments/documentation about species
+* Final data submission
+
+### Future improvements
+* Cross check MN expected species list for the count circle to call out any species that need documentation. 
+  * This list is found by selecting the count circle at https://moumn.org/CBC/locations_map.php, then clicking on "Expected Species List" link.
+  * Our official guidance on this is: 
+  >Everything on the top list will not need to be documented.
+On the bottom list in red or with an asterix will need to be documented. Those in blue probably don't have to be documented. Not on the list, expect to document it.
+  * Could probably automate pulling this data into the db for that, which would be much faster.
+  * Can also check the same page where data is being entered - occasional and rare species are indicated by the background color of the species name table cell.
 
 
 ## References

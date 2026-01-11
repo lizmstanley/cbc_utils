@@ -11,7 +11,7 @@ const __dirname = dirname(__filename);
 
 dotenv.config({path: path.join(__dirname, '..', '.env')});
 
-const CSV_RESULTS_FILE = path.join(__dirname, '..', `/csv-data-files/${process.env.RESULTS_CSV_FILE}`);
+const CSV_RESULTS_FILE = path.join(__dirname, '..', `/csv-data-files/${process.env.RESULTS_CSV_FILE || 'cbc-results.csv'}`);
 const MN_CBC_SPECIES_LIST = path.join(__dirname, '..', '/csv-data-files/mn-cbc-species.csv');
 const AOU_REAL_SPECIES_LIST = path.join(__dirname, '..', '/csv-data-files/NACC_list_species.csv');
 const FORCE_DATA_LOAD = process.env.FORCE_DATA_LOAD === 'true';
@@ -19,6 +19,8 @@ const FORCE_DATA_LOAD = process.env.FORCE_DATA_LOAD === 'true';
 export const db = new Database('cbc_database.db');
 
 export function initializeDatabase(forceDataReload: boolean = FORCE_DATA_LOAD !== undefined ? FORCE_DATA_LOAD : false) {
+    console.log(`Reading CBC results from CSV file: ${CSV_RESULTS_FILE}`);
+    console.log(`Database file located at: ${path.resolve('cbc_database.db')}`);
     console.log('Initializing database...');
     db.exec(`CREATE TABLE IF NOT EXISTS data_load_status
              (

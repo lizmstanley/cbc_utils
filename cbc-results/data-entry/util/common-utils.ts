@@ -1,5 +1,5 @@
 import {Page} from "puppeteer";
-import {db} from "./database";
+import {db} from "./database-ddl";
 import { encode as xpathEncode} from 'html-entities';
 
 export type CbcResultRow = { type: string, name: string, qualifier: string, value: string };

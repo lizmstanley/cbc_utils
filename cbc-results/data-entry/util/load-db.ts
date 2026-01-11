@@ -1,8 +1,9 @@
 import yargs from 'yargs';
 import {hideBin} from "yargs/helpers";
-import {initializeDatabase} from "./database";
+import {initializeDatabase} from "./database-ddl";
 
-interface InitOptions {
+
+interface LoadDbOptions {
     force: boolean;
 }
 
@@ -13,7 +14,7 @@ const parser = yargs(hideBin(process.argv))
         default: false
     });
 (async () => {
-    const args = parser.parse(hideBin(process.argv)) as InitOptions;
+    const args = parser.parse(hideBin(process.argv)) as LoadDbOptions;
     if (args['force']) {
         console.log('Force data reload option detected. All data sets will be reloaded into the database.');
     }
