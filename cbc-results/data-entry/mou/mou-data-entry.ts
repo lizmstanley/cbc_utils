@@ -116,7 +116,8 @@ async function setEffort(page: Page) {
     const totalHoursByFoot = getQualifiedResultValue("effort", "hours", "foot");
     const totalHoursByVehicle = getQualifiedResultValue("effort", "hours", "vehicle");
     const totalHoursCrossCountrySkiing = getQualifiedResultValue("effort", "hours", "cross country ski");
-    const totalEffortHours = roundDecimalInput(feederWatchingHours as number) + roundDecimalInput(totalHoursByFoot as number) + roundDecimalInput(totalHoursByVehicle as number) + roundDecimalInput(totalHoursCrossCountrySkiing as number);
+    // feeder hours are not included in total effort hours
+    const totalEffortHours = roundDecimalInput(totalHoursByFoot as number) + roundDecimalInput(totalHoursByVehicle as number) + roundDecimalInput(totalHoursCrossCountrySkiing as number);
 
     // MOU is all imperial units. The database supports metric so a future improvement could be to convert if needed.
     const totalMilesByFoot = getQualifiedResultValue("effort", "distance", "foot");
