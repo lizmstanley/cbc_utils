@@ -25,6 +25,10 @@ easy to do.
 These tools are written in TypeScript and run on Node.js. The main reason for that is to use [Puppeteer](https://pptr.dev/), which is a well known web scraping library. 
 This way we can programmatically access the websites, login, and enter data.
 
+I successfully used these tools to enter my own CBC data for 2025 into both websites, and saved myself hours of tedious work! Also,
+I have been invited to join the Christmas Bird Count Modernization Community Advisory Committee as a member of the CBC Leader Subcommittee, so I am planning to share my ideas and technical experience there, 
+to hopefully help improve the CBC compiler experience for everyone in the future.
+
 ## Setup
 
 This project is written in TypeScript and runs in Node.js. Please read thoroughly.
@@ -35,7 +39,7 @@ experience will likely have an easier time getting this set up as it exists toda
 
 1. Clone this project
 2. Install NVM (Node Version Manager), see https://github.com/nvm-sh/nvm
-   1Some easier instructions (for Linux/Mac/Windows) here: https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/
+   1. Some easier instructions (for Linux/Mac/Windows) here: https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/
 3. At a terminal in this (`cbc-results/data-entry`) directory, execute `nvm install $(cat .nvmrc)` to install the correct Node version
 4. `nvm use` to switch to that Node version
 5. Run `npm install` to install the project dependencies

@@ -8,7 +8,7 @@ for doing this is that my count circle is very complex, containing 24 areas over
 dozen count sheets, then enter all of that info into two different websites (Audubon and MOU). I'm trying to make this process easier for myself, and less
 error-prone. Maybe this will help other circle coordinators as well.
 
-I manage everything in Google, because it includes all of the tools which makes it much more convenient to manage. This includes:
+I manage everything in Google, because it includes all the tools which makes it much more convenient to manage. This includes:
 
 * Gmail - separate email account for the count (bloomingtonmncbc@gmail.com)
   * Can also use aliases such as bloomingtonmncbc+signup@gmail.com to capture new participant signups
@@ -24,10 +24,10 @@ I manage everything in Google, because it includes all of the tools which makes 
 Mainly what's here right now is:
 
 1. [Mapping utilities](mapping-utils) to pull recent [eBird sightings](https://documenter.getpostman.com/view/664302/S1ENwy59#4e020bc2-fc67-4fb6-a926-570cedefcc34) within the count circle, and generate CSV/KML files that can be imported into Google Maps.
+1. Scripts to automate [data entry into the Audubon CBC website](cbc-results/data-entry/audubon), and the [Minnesota Ornithologists' Union CBC Website](https://moumn.org/CBC/) leveraging Puppeteer to access those websites so that we can upload CBC data from a single CSV rather than manually in the UI.
+   1. Have a look at the [README in the data-entry directory](cbc-results/data-entry/README.md) for more details on that.
 1. [AI utilities](cbc-results/data-processing/ai) to help extract data from submitted count sheets, created CSVs from that, and generate summaries.
 1. [Google Apps Scripts](cbc-results/data-processing/google-app-scripts) to help process CBC data in Google Sheets (checking results from AI transcribed totals).
-1. Scripts to help automate [data entry into the Audubon CBC website](cbc-results/data-entry/audubon), and the [Minnesota Ornithologists' Union CBC Website](https://moumn.org/CBC/) leveraging Puppeteer to automate web browser actions.
-   2. Have a look at the [README in the data-entry directory](cbc-results/data-entry/README.md) for more details on that.
-2. Scripts to help with [participant management](participant-utils), and documentation/examples of my process and tools I use for that.
+1. Scripts to help with [participant management](participant-utils), and documentation/examples of my process and tools I use for that.
 
 This is still very much a work in progress. I will add more documentation and examples as I get time.
