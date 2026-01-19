@@ -18,7 +18,7 @@ It's error-prone and time-consuming. I have gotten to the point of being so anno
 that I am going to automate the whole thing to make my life easier, and if you are reading this, hopefully yours too.
 
 Since here in MN not only do we have to enter data into the [Audubon CBC website](https://netapp.audubon.org/aap/application/cbc), but also into the [Minnesota Ornithologists' Union (MOU) website](https://moumn.org/CBC/), 
-I plan to implement Puppeteer for both. Neither site provides an API or a way to upload CSV files, so scraping the website is a workaround 
+I have implemented Puppeteer for both. Neither site provides an API or a way to upload CSV files, so scraping the website is a workaround 
 to automate the data entry process. Both sites are rather dated, and unsophisticated in their auth/security (thankfully) which makes this somewhat
 easy to do. 
 
@@ -33,9 +33,8 @@ to hopefully help improve the CBC compiler experience for everyone in the future
 
 This project is written in TypeScript and runs in Node.js. Please read thoroughly.
 Note that I am doing this on Linux, so if you're on Windows or Mac, your specific steps may be slightly different. 
-I'm happy to answer questions, but if the answer is found in the README, I may just refer you back here. At some point I would like
-to package this up better (single executable), but for now this is a personal project that I'm sharing. Those that some technical/programming
-experience will likely have an easier time getting this set up as it exists today.
+I'm happy to answer questions, but if the answer is found in the README, I may just refer you back here. Those that
+have some technical/programming experience will likely have an easier time getting this set up as it exists today.
 
 1. Clone this project
 2. Install NVM (Node Version Manager), see https://github.com/nvm-sh/nvm
@@ -111,8 +110,10 @@ Species,Count,Downy Woodpecker,126
 Species,Count,Gadwall,cw
 ```
 
-There is a full example (data I actually used from my count circle
-at `csv-data-files/cbc-results-example.csv`.) Decimal numbers will be rounded.
+Note that any decimal numbers will be rounded.
+
+There is a full example (the 2025 data I actually used from my count circle for this process)
+at `csv-data-files/cbc-results-example.csv`. 
 
 ## NAS Data Entry
 
@@ -174,13 +175,14 @@ waste time on this section. I manage my participants list separately anyway.
 * Final data submission
 
 ### Future improvements
-* Cross check MN expected species list for the count circle to call out any species that need documentation. 
+* Cross-check MN expected species list for the count circle to call out any species that need documentation. 
   * This list is found by selecting the count circle at https://moumn.org/CBC/locations_map.php, then clicking on "Expected Species List" link.
   * Our official guidance on this is: 
   >Everything on the top list will not need to be documented.
 On the bottom list in red or with an asterix will need to be documented. Those in blue probably don't have to be documented. Not on the list, expect to document it.
   * Could probably automate pulling this data into the db for that, which would be much faster.
   * Can also check the same page where data is being entered - occasional and rare species are indicated by the background color of the species name table cell.
+  * Allow other states/provinces to provide their own expected species list for their count circles.
 
 
 ## References
